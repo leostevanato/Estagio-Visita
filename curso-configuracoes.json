@@ -11,7 +11,31 @@
 			},
 			{
 				"mostrar": true,
+				"texto": "Seu painel de informações"
+			},
+			{
+				"mostrar": true,
+				"texto": "Calendário de atividades"
+			},
+			{
+				"mostrar": true,
+				"texto": "Módulo 1"
+			},
+			{
+				"mostrar": true,
+				"texto": "Módulo 2"
+			},
+			{
+				"mostrar": true,
+				"texto": "Módulo 3"
+			},
+			{
+				"mostrar": true,
 				"texto": "Certificado"
+			},
+			{
+				"mostrar": true,
+				"texto": "Quero saber mais"
 			}
 		]
 	}
