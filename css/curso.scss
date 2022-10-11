@@ -8,7 +8,7 @@ $pasta-imagens: "../imagens/";
 
 $pasta-logos: $pasta-imagens+"logos/";
 
-$familia-fonte: 'Helvetica';
+$familia-fonte: 'Lato', sans-serif;
 
 @mixin texto-padding-linhas {
 	-webkit-box-decoration-break: clone;
