@@ -60,9 +60,9 @@ h3.sectionname,
 }
 
 #curso-container {
-  font-family: "Helvetica";
+  font-family: "Lato", sans-serif;
   color: #222221;
-  background-color: #BFDA90;
+  background-color: #FFFFFF;
 }
 #curso-container.container-fluid {
   position: relative;
@@ -95,7 +95,7 @@ h3.sectionname,
   width: 52px;
   height: 100%;
   left: 0;
-  background: #9FBA6F;
+  background: linear-gradient(180deg, #032C51 0%, #063E70 100%);
   border-right: 1px solid #222221;
   z-index: 5;
 }
@@ -133,7 +133,7 @@ h3.sectionname,
   position: absolute;
   height: 4px;
   width: 100%;
-  background: #BFDA90;
+  background: #AADC80;
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
@@ -177,6 +177,7 @@ h3.sectionname,
   box-sizing: border-box;
   margin: 0 auto 0 0;
   padding-top: 88px;
+  padding-bottom: 88px;
   text-align: center;
   opacity: 0;
   display: none;
@@ -187,6 +188,7 @@ h3.sectionname,
     width: 128px;
     margin: 0 auto;
     padding-top: 56px;
+    padding-bottom: 56px;
     opacity: 1;
   }
 }
@@ -196,9 +198,12 @@ h3.sectionname,
   }
 }
 #curso-container #menu-lateral .item-menu {
+  display: flex;
+  gap: 8px;
+  color: #ABE367;
   font-weight: 700;
   font-size: 15px;
-  line-height: 100%;
+  line-height: 120%;
   text-align: center;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -207,25 +212,37 @@ h3.sectionname,
 @media only screen and (min-width: 768px) {
   #curso-container #menu-lateral .item-menu {
     font-size: 16px;
-    padding-top: 36px;
-    padding-bottom: 36px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
   }
 }
 @media only screen and (min-width: 1200px) {
   #curso-container #menu-lateral .item-menu {
     font-size: 20px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
+}
+#curso-container #menu-lateral .item-menu .marcador-ativo {
+  visibility: hidden;
+  flex: 0 0 7px;
+  width: 7px;
+  height: 36px;
+  margin-top: -7px;
+  background-color: #ABE367;
 }
 #curso-container #menu-lateral .item-menu:first-child {
   padding-top: 0;
 }
 #curso-container #menu-lateral .item-menu:hover {
-  color: #BFDA90;
+  color: #AADC80;
 }
 #curso-container #menu-lateral .item-menu.ativo {
-  color: #BFDA90;
+  color: #AADC80;
+}
+#curso-container #menu-lateral .item-menu.ativo .marcador-ativo {
+  visibility: visible;
 }
 #curso-container #menu-lateral .item-menu[data-link]:not([data-link=""])::after {
   content: "";
@@ -242,6 +259,7 @@ h3.sectionname,
   background-repeat: no-repeat;
 }
 #curso-container #menu-lateral .item-menu-separador {
+  visibility: hidden;
   width: 48px;
   margin: 0 auto;
   height: 1px;
@@ -289,7 +307,7 @@ h3.sectionname,
   font-weight: 700;
   font-size: 15px;
   line-height: 20px;
-  background-color: #9FBA6F;
+  background-color: #73BF32;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
@@ -308,7 +326,7 @@ h3.sectionname,
 #curso-container .link-dentro-texto {
   color: #FFFFFF;
   font-weight: 700;
-  background-color: #9FBA6F;
+  background-color: #73BF32;
   padding: 0 2px;
   cursor: pointer;
   -webkit-box-decoration-break: clone;
@@ -380,7 +398,7 @@ h3.sectionname,
   font-size: 42px;
   line-height: 100%;
   letter-spacing: -0.015em;
-  color: #9FBA6F;
+  color: #73BF32;
   margin-bottom: 24px;
 }
 @media only screen and (min-width: 576px) {
@@ -398,7 +416,7 @@ h3.sectionname,
 }
 #curso-container #coluna-conteudo .item-conteudo .descricao {
   padding: 0 2px;
-  background-color: #BFDA90;
+  background-color: #AADC80;
   font-size: 15px;
   line-height: 18px;
 }
@@ -421,7 +439,7 @@ h3.sectionname,
   font-size: 21px;
   line-height: 23px;
   font-weight: 400;
-  background-color: #BFDA90;
+  background-color: #AADC80;
 }
 @media only screen and (min-width: 576px) {
   #curso-container #coluna-conteudo .item-conteudo[data-item=inicio] .titulo-principal {

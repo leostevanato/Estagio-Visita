@@ -1,6 +1,9 @@
 $bootstrap-breakpoint: "-fluid";
-$verde-1: #BFDA90;
-$verde-2: #9FBA6F;
+$azul-1: #063E70;
+$azul-2: #032C51;
+$verde-1: #AADC80;
+$verde-2: #73BF32;
+$verde-3: #ABE367;
 $cinza-1: #222221;
 // $pasta-imagens: "https://www.educacaoadistancia.camara.leg.br/ead_cfd/pluginfile.php/275804/mod_folder/content/0/imagens/";
 $pasta-imagens: "../imagens/";
@@ -137,7 +140,7 @@ h3.sectionname,
 #curso-container {
 	font-family: $familia-fonte;
 	color: $cinza-1;
-	background-color: $verde-1;
+	background-color: #FFFFFF;
 
 	&.container#{$bootstrap-breakpoint} {
 		position: relative;
@@ -170,7 +173,7 @@ h3.sectionname,
 		width: 52px;
 		height: 100%;
 		left: 0;
-		background: $verde-2;
+		background: linear-gradient(180deg, $azul-2 0%, $azul-1 100%);
 		border-right: 1px solid $cinza-1;
 		z-index: 5;
 
@@ -277,6 +280,7 @@ h3.sectionname,
 		box-sizing: border-box;
 		margin: 0 auto 0 0;
 		padding-top: 88px;
+		padding-bottom: 88px;
 		text-align: center;
 		opacity: 0;
 		display: none;
@@ -286,6 +290,7 @@ h3.sectionname,
 			width: 128px;
 			margin: 0 auto;
 			padding-top: 56px;
+			padding-bottom: 56px;
     		opacity: 1;
 		}
 
@@ -294,9 +299,12 @@ h3.sectionname,
 		}
 
 		.item-menu {
+			display: flex;
+			gap: 8px;
+			color: $verde-3;
 			font-weight: 700;
 			font-size: 15px;
-			line-height: 100%;
+			line-height: 120%;
 			text-align: center;
 			padding-top: 24px;
 			padding-bottom: 24px;
@@ -304,14 +312,24 @@ h3.sectionname,
 
 			@media only screen and (min-width: 768px) {
 				font-size: 16px;
-				padding-top: 36px;
-				padding-bottom: 36px;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				text-align: left;
 			}
 
 			@media only screen and (min-width: 1200px) {
 				font-size: 20px;
-				padding-top: 40px;
-				padding-bottom: 40px;
+				padding-top: 24px;
+				padding-bottom: 24px;
+			}
+
+			.marcador-ativo {
+				visibility: hidden;
+				flex: 0 0 7px;
+				width: 7px;
+				height: 36px;
+				margin-top: -7px;
+				background-color: $verde-3;
 			}
 
 			&:first-child {
@@ -324,6 +342,10 @@ h3.sectionname,
 
 			&.ativo {
 				color: $verde-1;
+
+				.marcador-ativo {
+					visibility: visible;
+				}
 			}
 
 			&[data-link]:not([data-link=""]) {
@@ -344,6 +366,7 @@ h3.sectionname,
 		}
 
 		.item-menu-separador {
+			visibility: hidden;
 			width: 48px;
 			margin: 0 auto;
 			height: 1px;
