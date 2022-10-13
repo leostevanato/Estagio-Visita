@@ -5,7 +5,7 @@ $verde-1: #AADC80;
 $verde-2: #73BF32;
 $verde-3: #ABE367;
 $cinza-1: #222221;
-// $pasta-imagens: "https://www.educacaoadistancia.camara.leg.br/ead_cfd/pluginfile.php/275804/mod_folder/content/0/imagens/";
+// $pasta-imagens: "https://www.educacaoadistancia.camara.leg.br/ead_cfd/pluginfile.php/285399/mod_folder/content/0/imagens/";
 $pasta-imagens: "../imagens/";
 // $bg-conteudo: $pasta-imagens + "bg_conteudo.jpg";
 
@@ -54,30 +54,35 @@ $familia-fonte: 'Lato', sans-serif;
 
 $cor-caixa-fill: '%239FBA6F';
 $cor-caixa-stroke: '%23222221';
-	
+
 /*
 tipo:
  1 = 2 bolas vazias
  2 = 1 bola vazia outra cheia
  3 = 2 bolas cheias
  */
-@mixin caixa-svg-bg($tipo:1) {
+@mixin caixa-svg-bg($tipo: 1) {
 	$svg: "data:image/svg+xml,%3Csvg width='201' height='132' viewBox='0 0 201 132' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='199' height='130' fill='%239FBA6F' stroke='#{$cor-caixa-stroke}' stroke-width='2'/%3E%3Ccircle cx='16' cy='14' r='3'";
 
-	@if $tipo == 1 {
+	@if $tipo ==1 {
 		background-image: url("#{$svg} stroke='#{$cor-caixa-stroke}' stroke-width='2'/%3E%3Ccircle cx='30' cy='14' r='3' stroke='#{$cor-caixa-stroke}' stroke-width='2'/%3E%3Cpath d='M0 26 H200' stroke='#{$cor-caixa-stroke}' stroke-width='2'/%3E%3Crect x='42' y='11' width='146' height='6' stroke='#{$cor-caixa-stroke}' stroke-width='2'/%3E%3C/svg%3E%0A");
-	} @else if $tipo == 2 {
+	}
+
+	@else if $tipo ==2 {
 		background-image: url("#{$svg} fill='#{$cor-caixa-stroke}' stroke='#{$cor-caixa-stroke}' stroke-width='2'/%3E%3Ccircle cx='30' cy='14' r='3' stroke='#{$cor-caixa-stroke}' stroke-width='2'/%3E%3Cpath d='M0 26 H200' stroke='#{$cor-caixa-stroke}' stroke-width='2'/%3E%3Crect x='42' y='11' width='146' height='6' stroke='#{$cor-caixa-stroke}' stroke-width='2'/%3E%3C/svg%3E%0A");
-	} @else {
+	}
+
+	@else {
 		background-image: url("#{$svg} fill='#{$cor-caixa-stroke}' stroke='#{$cor-caixa-stroke}' stroke-width='2'/%3E%3Ccircle cx='30' cy='14' r='3' fill='#{$cor-caixa-stroke}' stroke='#{$cor-caixa-stroke}' stroke-width='2'/%3E%3Cpath d='M0 26 H200' stroke='#{$cor-caixa-stroke}' stroke-width='2'/%3E%3Crect x='42' y='11' width='146' height='6' stroke='#{$cor-caixa-stroke}' stroke-width='2'/%3E%3C/svg%3E%0A");
 	}
 }
 
-@mixin icone-link-svg($cor:$cor-caixa-stroke) {
+@mixin icone-link-svg($cor: $cor-caixa-stroke) {
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='#{$cor}' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1' /%3E%3C/svg%3E");
 	background-repeat: no-repeat;
-	
+
 }
+
 /* INÍCIO - Layout moodle */
 
 .pagelayout-course .headerbkg {
@@ -92,7 +97,7 @@ div#page-content,
 #region-main-box,
 #region-main {
 	// @media only screen and (max-width: 1200px) {
-		padding: 0;
+	padding: 0;
 	// }
 }
 
@@ -101,12 +106,12 @@ div#page-content,
 }
 
 /* Esconder elementos padrão do Moodle acima do menu */
-#page-navbar > nav > ul,
-#page-header > div > div > div > div >div.mr-auto,
-#page-header > div > div > div > div.d-flex.flex-wrap,
+#page-navbar>nav>ul,
+#page-header>div>div>div>div>div.mr-auto,
+#page-header>div>div>div>div.d-flex.flex-wrap,
 h3.sectionname,
 #completionprogressid {
-    display: none;
+	display: none;
 }
 
 .course-content ul.topics li.section,
@@ -117,24 +122,87 @@ h3.sectionname,
 
 /* Esconder Borda Padrão do Moodle da área do conteúdo */
 .course-content ul.topics li.section .content {
-    border: 0;
+	border: 0;
 }
 
 /* Fundo área de navegação */
-#section-0 > div.content > div.summary {
-    background-color: #ffffff;
+#section-0>div.content>div.summary {
+	background-color: #ffffff;
 	padding: 0;
-    // max-width: 1440px;
+	// max-width: 1440px;
 }
 
-.editing .course-content ul.topics li.section .left, .editing .course-content ul.topics li.section .right {
+.editing .course-content ul.topics li.section .left,
+.editing .course-content ul.topics li.section .right {
 	padding: 0;
 }
 
 /* FIM - Layout moodle */
 
-.flex-basis-100 { // Não tem no bootstrap, então criamos.
+.flex-basis-100 {
+	// Não tem no bootstrap, então criamos.
 	flex-basis: 100%;
+}
+
+.margem {
+	&-top {
+		margin-top: 72px;
+	}
+
+	&-bottom {
+		margin-bottom: 72px;
+	}
+}
+
+.caixa-info {
+	padding: 8px 24px;
+	gap: 8px;
+	border-radius: 48px;
+	width: fit-content;
+	color: #FFFFFF;
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 164%;
+	box-shadow: 0px 6px 0px 0px $azul-2;
+	-webkit-box-shadow: 0px 6px 0px 0px $azul-2;
+	-moz-box-shadow: 0px 6px 0px 0px $azul-2;
+
+	&.verde {
+		background-color: $verde-2;
+	}
+
+	&.azul {
+		border: 1px solid $azul-2;
+		background-color: $azul-1;
+	}
+
+	.icone {
+		filter: brightness(0) invert(1);
+		width: 20px;
+
+		margin: {
+			bottom: 4px;
+			right: 8px;
+		}
+	}
+
+	@media only screen and (min-width: 768px) {
+		font-size: 22px;
+
+		.icone {
+			width: 24px;
+			margin-bottom: 6px;
+		}
+	}
+
+	@media only screen and (min-width: 1200px) {
+		font-size: 27px;
+
+		.icone {
+			width: 26px;
+			margin-bottom: 8px;
+		}
+	}
 }
 
 #curso-container {
@@ -291,7 +359,7 @@ h3.sectionname,
 			margin: 0 auto;
 			padding-top: 56px;
 			padding-bottom: 56px;
-    		opacity: 1;
+			opacity: 1;
 		}
 
 		@media only screen and (min-width: 1200px) {
@@ -305,31 +373,37 @@ h3.sectionname,
 			font-weight: 700;
 			font-size: 15px;
 			line-height: 120%;
-			text-align: center;
-			padding-top: 24px;
-			padding-bottom: 24px;
+			text-align: left;
+			padding-top: 16px;
+			padding-bottom: 16px;
 			cursor: pointer;
 
 			@media only screen and (min-width: 768px) {
 				font-size: 16px;
-				padding-top: 20px;
-				padding-bottom: 20px;
-				text-align: left;
+				// padding-top: 20px;
+				// padding-bottom: 20px;
 			}
 
 			@media only screen and (min-width: 1200px) {
 				font-size: 20px;
-				padding-top: 24px;
-				padding-bottom: 24px;
+				padding-top: 20px;
+				padding-bottom: 20px;
 			}
 
 			.marcador-ativo {
 				visibility: hidden;
 				flex: 0 0 7px;
 				width: 7px;
-				height: 36px;
-				margin-top: -7px;
+				// height: 36px;
+				// margin-top: -7px;
 				background-color: $verde-3;
+			}
+
+			.texto {
+				padding: {
+					top: 4px;
+					bottom: 4px;
+				};
 			}
 
 			&:first-child {
@@ -408,10 +482,12 @@ h3.sectionname,
 
 	.quebra-linha-bg {
 		padding: 1px;
+
 		font: {
 			weight: 700;
 			size: 15px;
 		}
+
 		line-height: 20px;
 		background-color: $verde-2;
 
@@ -430,9 +506,9 @@ h3.sectionname,
 
 	.link-dentro-texto {
 		color: #FFFFFF;
-    	font-weight: 700;
-    	background-color: $verde-2;
-    	padding: 0 2px;
+		font-weight: 700;
+		background-color: $verde-2;
+		padding: 0 2px;
 		cursor: pointer;
 
 		@include texto-padding-linhas;
@@ -442,10 +518,12 @@ h3.sectionname,
 		position: relative;
 		height: 100%;
 		min-height: 544px;
+
 		padding: {
 			top: 48px;
-			left: 92px;
+			right: 12px;
 			bottom: 48px;
+			left: 64px;
 		}
 
 		@media only screen and (min-width: 576px) {
@@ -457,43 +535,11 @@ h3.sectionname,
 		}
 
 		@media only screen and (min-width: 1200px) {
-			padding-left: 172px;
-		}
-
-		&[data-item-ativo="inicio"] {
-			padding-bottom: 0;
-
-			background: {
-				// image: url($bg-conteudo);
-				size: 546px;
-				repeat: no-repeat;
-				position: 96% -29px;
-			}
-
-			@media only screen and (min-width: 576px) {
-				background: {
-					size: 715px;
-					position: right -85px;
-				}
-			}
-	
-			@media only screen and (min-width: 768px) {
-				background: {
-					size: 910px;
-					position: right -200px;
-				}
-			}
-		}
-
-		&[data-item-ativo="certificado"] {
-			padding-right: 16px;
-
-			@media only screen and (min-width: 576px) {
-				padding-right: 36px;
-			}
-
-			@media only screen and (min-width: 992px) {
-				padding-right: 48px;
+			padding: {
+				top: 56px;
+				right: 148px;
+				bottom: 56px;
+				left: 148px;
 			}
 		}
 
@@ -505,154 +551,157 @@ h3.sectionname,
 				display: block;
 			}
 
-			.titulo {
-				font-weight: 700;
-				font-size: 42px;
-				line-height: 100%;
-				letter-spacing: -0.015em;
-				color: $verde-2;
-				margin-bottom: 24px;
+			.curso-logo {
+				width: 250px;
+				height: 62px;
 
-				@media only screen and (min-width: 576px) {
-					font-size: 70px;
-					letter-spacing: -0.02em;
-					margin-bottom: 34px;
+				background: {
+					image: url($pasta-imagens + "logo_estagio_visita_1.png");
+					repeat: no-repeat;
+					size: contain;
+				}
+
+				margin: {
+					top: 0;
+					bottom: 60px;
+					left: -10px;
 				}
 
 				@media only screen and (min-width: 992px) {
-					font-size: 80px;
-					letter-spacing: normal;
+					width: 382px;
+					margin-bottom: 72px;
+				}
+			}
+
+			.titulo {
+				font-weight: 600;
+				font-size: 42px;
+				line-height: 100%;
+				color: $azul-1;
+				margin-bottom: 24px;
+
+				@media only screen and (min-width: 576px) {
+					font-size: 60px;
+					margin-bottom: 54px;
+				}
+
+				@media only screen and (min-width: 992px) {
+					font-size: 72px;
+					margin-bottom: 72px;
+				}
+			}
+
+			.titulo-2 {
+				font-weight: 400;
+				font-size: 24px;
+				line-height: 120%;
+				color: $azul-1;
+
+				@media only screen and (min-width: 576px) {
+					font-size: 27px;
+				}
+			}
+
+			.informacoes {
+				margin-bottom: 24px;
+
+				@media only screen and (min-width: 576px) {
+					margin-bottom: 54px;
+				}
+
+				@media only screen and (min-width: 992px) {
+					margin-bottom: 72px;
 				}
 			}
 
 			.descricao {
-				padding: 0 2px;
-				background-color: $verde-1;
-				font-size: 15px;
-				line-height: 18px;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 172%;
+				letter-spacing: -0.01em;
+				color: #000000;
 
 				@media only screen and (min-width: 576px) {
 					font-size: 16px;
-					line-height: 19px;
 				}
-				
+
 				@media only screen and (min-width: 992px) {
 					font-size: 20px;
-					line-height: 23px;
+				}
+			}
+
+			.fale-com {
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 100%;
+				color: $azul-1;
+
+				img {
+					margin-right: 16px;
+				}
+
+				@media only screen and (min-width: 576px) {
+					font-size: 24px;
 				}
 			}
 
 			&[data-item="inicio"] {
-				.titulo-principal {
-					width: 250px;
-					padding: 0 2px 2px 2px;
-					margin-bottom: 32px;
-					font-size: 21px;
-					line-height: 23px;
-					font-weight: 400;
-					background-color: $verde-1;
-
-					@media only screen and (min-width: 576px) {
-						width: 400px;
-						font-size: 24px;
-						line-height: 26px;
-						margin-bottom: 46px;
-					}
-
-					@media only screen and (min-width: 1200px) {
-						width: 500px;
-						font-size: 30px;
-						line-height: 32px;
-						margin-bottom: 64px;
-					}
-
-					span {
-						font-size: 36px;
-						line-height: 38px;
-						font-weight: 700;
-
-						@media only screen and (min-width: 576px) {
-							font-size: 51px;
-							line-height: 53px;
-						}
-						
-						@media only screen and (min-width: 1200px) {
-							font-size: 63px;
-							line-height: 65px;
-						}
-					}
-				}
+				min-height: 1500px;
 
 				.informacoes {
 					display: flex;
-					flex-direction: column;
-					align-items: flex-start;
-					gap: 12px;
-					margin-bottom: 32px;
-
-					@media only screen and (min-width: 576px) {
-						gap: 18px;
-						margin-bottom: 38px;
-					}
-
-					@media only screen and (min-width: 1200px) {
-						gap: 24px;
-						margin-bottom: 48px;
-					}
-				}
-
-				.descricao {
-					width: 225px;
-					margin: {
-						left: 6px;
-						bottom: 32px;
-					}
-					
-					@media only screen and (min-width: 576px) {
-						width: 340px;
-						font-size: 18px;
-						line-height: 22px;
-						margin: {
-							left: 15px;
-							bottom: 56px;
-						}
-					}
-
-					@media only screen and (min-width: 1200px) {
-						width: 488px;
-						font-size: 24px;
-						line-height: 28px;
-						margin-bottom: 68px;
-					}
-
-					p {
-						font-weight: 700;
-
-						&:nth-of-type(3) {
-							margin-bottom: 0.7rem;
-						}
-					}
-
-					ol {
-						line-height: 22px;
-
-						@media only screen and (min-width: 576px) {
-							line-height: 28px;
-						}
-
-						@media only screen and (min-width: 1200px) {
-							line-height: 38px;
-						}
-					}
-				}
-
-				.botao-cta {
-					margin-left: 8px;
+					flex-wrap: wrap;
+					gap: 24px;
 				}
 			}
-			
-			&[data-item="certificado"] {
-				
+
+			&[data-item="certificado"] {}
+		}
+
+		&[data-item-ativo="inicio"] {
+			background: {
+				image: url($pasta-imagens + "bg_imagem_2.png");
+				repeat: no-repeat;
+				position: right bottom 124px; // 124px é a altura do rodapé
+			}
+		}
+
+		&[data-item-ativo="certificado"] {}
+	}
+
+	.rodape {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+		height: 124px;
+		line-height: 124px;
+		background-color: $verde-2;
+
+		span {
+			display: inline-block;
+			margin-left: 64px;
+			margin-right: 16px;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 26px;
+			color: #FFFFFF;
+
+			@media only screen and (min-width: 576px) {
+				margin-left: 106px;
+			}
+
+			@media only screen and (min-width: 1200px) {
+				margin-left: 148px;
+			}
+		}
+
+		img {
+			width: 150px;
+			vertical-align: middle;
+
+			@media only screen and (min-width: 768px) {
+				width: 212px;
 			}
 		}
 	}
