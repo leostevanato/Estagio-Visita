@@ -8,7 +8,7 @@
 				"tipo": "Vídeo",
 				"titulo": "O que é Democracia?",
 				"botaoTexto": "Assistir",
-				"botaoLink": "#",
+				"botaoLink": "https://evc.camara.leg.br/material/o-que-e-democracia/",
 				"thumb": "o-que-e-democracia.jpg",
 				"thumbAlt": ""
 			},
@@ -16,7 +16,7 @@
 				"tipo": "Vídeo",
 				"titulo": "O que é Poder Legislativo?",
 				"botaoTexto": "Assistir",
-				"botaoLink": "#",
+				"botaoLink": "https://www.youtube.com/watch?v=Z3WiXxhjllk",
 				"thumb": "o-que-e-poder-legislativo.jpg",
 				"thumbAlt": ""
 			},
@@ -24,7 +24,7 @@
 				"tipo": "Flux",
 				"titulo": "O papel das Leis",
 				"botaoTexto": "Ler",
-				"botaoLink": "#",
+				"botaoLink": "https://evc.camara.leg.br/material/o-papel-das-leis/",
 				"thumb": "o-papel-das-leis.jpg",
 				"thumbAlt": ""
 			},
@@ -32,7 +32,7 @@
 				"tipo": "Vídeo",
 				"titulo": "Representação Política e Parlamento - Origens da representação e participação",
 				"botaoTexto": "Assistir",
-				"botaoLink": "#",
+				"botaoLink": "https://www.youtube.com/watch?v=g7PsdD2fUMI&list=PLysoTmRxzFnXkAAXu3VYCpxFh4KPeuRte&index=28",
 				"thumb": "representacao-politica-e-parlamento.jpg",
 				"thumbAlt": ""
 			},
@@ -40,7 +40,7 @@
 				"tipo": "Aula",
 				"titulo": "Quem te representa?",
 				"botaoTexto": "Assistir",
-				"botaoLink": "#",
+				"botaoLink": "https://www.youtube.com/watch?v=qK9GgsJQk3o&list=PLysoTmRxzFnUn8EO3l_rNxTLKF4_cPE9b&index=4",
 				"thumb": "congresso-nacional.jpg",
 				"thumbAlt": ""
 			}
