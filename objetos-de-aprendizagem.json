@@ -1,0 +1,49 @@
+[
+	{
+		"id": 1,
+		"itemConteudo": "semana-1",
+		"titulo": "Semana 1",
+		"objetos": [
+			{
+				"tipo": "Vídeo",
+				"titulo": "O que é Democracia?",
+				"botaoTexto": "Assistir",
+				"botaoLink": "#",
+				"thumb": "o-que-e-democracia.jpg",
+				"thumbAlt": ""
+			},
+			{
+				"tipo": "Vídeo",
+				"titulo": "O que é Poder Legislativo?",
+				"botaoTexto": "Assistir",
+				"botaoLink": "#",
+				"thumb": "o-que-e-poder-legislativo.jpg",
+				"thumbAlt": ""
+			},
+			{
+				"tipo": "Flux",
+				"titulo": "O papel das Leis",
+				"botaoTexto": "Ler",
+				"botaoLink": "#",
+				"thumb": "o-papel-das-leis.jpg",
+				"thumbAlt": ""
+			},
+			{
+				"tipo": "Vídeo",
+				"titulo": "Representação Política e Parlamento - Origens da representação e participação",
+				"botaoTexto": "Assistir",
+				"botaoLink": "#",
+				"thumb": "representacao-politica-e-parlamento.jpg",
+				"thumbAlt": ""
+			},
+			{
+				"tipo": "Aula",
+				"titulo": "Quem te representa?",
+				"botaoTexto": "Assistir",
+				"botaoLink": "#",
+				"thumb": "congresso-nacional.jpg",
+				"thumbAlt": ""
+			}
+		]
+	}
+]
