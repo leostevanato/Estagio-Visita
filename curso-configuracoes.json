@@ -11,11 +11,11 @@
 			},
 			{
 				"mostrar": true,
-				"texto": "Seu painel de informações"
+				"texto": "Calendário"
 			},
 			{
 				"mostrar": true,
-				"texto": "Calendário de atividades"
+				"texto": "Atividades avaliativas"
 			},
 			{
 				"mostrar": true,
@@ -32,10 +32,6 @@
 			{
 				"mostrar": true,
 				"texto": "Certificado"
-			},
-			{
-				"mostrar": true,
-				"texto": "Quero saber mais"
 			}
 		]
 	}

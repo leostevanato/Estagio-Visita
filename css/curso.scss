@@ -13,6 +13,8 @@ $pasta-logos: $pasta-imagens+"logos/";
 
 $familia-fonte: 'Lato', sans-serif;
 
+$altura-rodape: 124px;
+
 @mixin texto-padding-linhas {
 	-webkit-box-decoration-break: clone;
 	box-decoration-break: clone;
@@ -146,11 +148,19 @@ h3.sectionname,
 
 .margem {
 	&-top {
-		margin-top: 72px;
+		&-1 {
+			margin-top: 72px;
+		}
 	}
 
 	&-bottom {
-		margin-bottom: 72px;
+		&-1 {
+			margin-bottom: 72px;
+		}
+
+		&-2 {
+			margin-bottom: 56px;
+		}
 	}
 }
 
@@ -203,6 +213,95 @@ h3.sectionname,
 			margin-bottom: 8px;
 		}
 	}
+}
+
+.objetos {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 52px;
+}
+
+.objeto {
+	max-width: 406px;
+	background-color: $verde-2;
+	border-bottom: 7px solid $azul-1;
+
+	&-imagem {
+		width: 100%;
+	}
+
+	&-conteudo {
+		height: 317px;
+		background-color: $verde-3;
+		border-radius: 0px 136px 0px 0px;
+		padding: 24px 28px 24px 30px;
+
+		@media only screen and (min-width: 576px) {
+			height: 256px;
+			padding: 32px 38px 32px 56px;
+		}
+	}
+
+	&-tipo {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 242%;
+		color: $azul-1;
+		text-transform: uppercase;
+	}
+
+	&-titulo {
+		height: 180px;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 100%;
+		color: $azul-1;
+
+		@media only screen and (min-width: 576px) {
+			height: 105px;
+		}
+	}
+
+	&-botao {
+		display: inline-block;
+		background-color: $azul-1;
+		border-radius: 57px;
+		font-weight: 800;
+		font-size: 20px;
+		line-height: 242%;
+		color: #ffffff;
+		padding: 0 24px;
+		text-decoration: none;
+	
+		&:hover {
+			opacity: 0.9;
+			color: #ffffff;
+			text-decoration: none;
+		}
+	}
+}
+
+.imagem-semana {
+	width: fit-content;
+	
+	img {
+		border-bottom: 7px solid #73BF32;
+		border-radius: 0px 96px 0px 0px;
+		margin-bottom: 16px;
+
+		@media only screen and (min-width: 576px) {
+			border-radius: 0px 196px 0px 0px;
+		}
+	}
+}
+
+.creditos {
+	display: block;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 172%;
+	letter-spacing: 0.01em;
+	color: #000000;
 }
 
 #curso-container {
@@ -394,8 +493,6 @@ h3.sectionname,
 				visibility: hidden;
 				flex: 0 0 7px;
 				width: 7px;
-				// height: 36px;
-				// margin-top: -7px;
 				background-color: $verde-3;
 			}
 
@@ -522,7 +619,7 @@ h3.sectionname,
 		padding: {
 			top: 48px;
 			right: 12px;
-			bottom: 48px;
+			bottom: calc(48px + $altura-rodape);
 			left: 64px;
 		}
 
@@ -538,7 +635,7 @@ h3.sectionname,
 			padding: {
 				top: 56px;
 				right: 148px;
-				bottom: 56px;
+				bottom: calc(56px + $altura-rodape);
 				left: 148px;
 			}
 		}
@@ -598,7 +695,33 @@ h3.sectionname,
 				color: $azul-1;
 
 				@media only screen and (min-width: 576px) {
-					font-size: 27px;
+					font-size: 32px;
+				}
+			}
+
+			.titulo-3 {
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 100%;
+				color: $azul-1;
+
+				@media only screen and (min-width: 576px) {
+					font-size: 24px;
+				}
+			}
+
+			.assunto {
+				font-weight: 500;
+				font-size: 36px;
+				line-height: 100%;
+				color: $verde-2;
+				margin-top: 24px;
+				border-left: 7px solid $azul-1;
+				padding-left: 14px;
+
+				@media only screen and (min-width: 576px) {
+					font-size: 72px;
+					margin-left: -23px;
 				}
 			}
 
@@ -611,6 +734,12 @@ h3.sectionname,
 
 				@media only screen and (min-width: 992px) {
 					margin-bottom: 72px;
+				}
+
+				&.tipo-flex {
+					display: flex;
+					flex-wrap: wrap;
+					gap: 24px;
 				}
 			}
 
@@ -647,12 +776,6 @@ h3.sectionname,
 
 			&[data-item="inicio"] {
 				min-height: 1500px;
-
-				.informacoes {
-					display: flex;
-					flex-wrap: wrap;
-					gap: 24px;
-				}
 			}
 
 			&[data-item="certificado"] {}
@@ -662,7 +785,7 @@ h3.sectionname,
 			background: {
 				image: url($pasta-imagens + "bg_imagem_2.png");
 				repeat: no-repeat;
-				position: right bottom 124px; // 124px é a altura do rodapé
+				position: right bottom $altura-rodape;
 			}
 		}
 
@@ -674,8 +797,8 @@ h3.sectionname,
 		width: 100%;
 		left: 0;
 		bottom: 0;
-		height: 124px;
-		line-height: 124px;
+		height: $altura-rodape;
+		line-height: $altura-rodape;
 		background-color: $verde-2;
 
 		span {

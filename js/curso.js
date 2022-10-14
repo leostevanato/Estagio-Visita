@@ -25,7 +25,7 @@ function elementoClick(element) {
 
 function setItemMenuAtivo(elemento) {
 	let itemMenuList = document.querySelectorAll(".item-menu");
-
+	
 	if (typeof item_menu_ativo === 'undefined' || item_menu_ativo.getAttribute("data-item") != elemento.getAttribute("data-item")) {
 		if (itemMenuList) {
 			itemMenuList.forEach(item => item.classList.remove("ativo"));
@@ -251,5 +251,5 @@ window.addEventListener('load', () => {
 		
 	document.getElementById('coluna-conteudo').style.minHeight = menuLateralAlturaMin + "px";
 
-	setItemMenuAtivo(document.querySelector('.item-conteudo[data-item="semana-1"]'));
+	// setItemMenuAtivo(document.querySelector('.item-menu[data-item="semana-1"]'));
 });
