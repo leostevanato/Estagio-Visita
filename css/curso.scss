@@ -161,6 +161,10 @@ h3.sectionname,
 		&-2 {
 			margin-bottom: 56px;
 		}
+
+		&-3 {
+			margin-bottom: 42px;
+		}
 	}
 }
 
@@ -671,7 +675,7 @@ h3.sectionname,
 			}
 
 			.titulo {
-				font-weight: 600;
+				font-weight: 500;
 				font-size: 42px;
 				line-height: 100%;
 				color: $azul-1;
@@ -759,6 +763,7 @@ h3.sectionname,
 				}
 			}
 
+			.enviar-termo,
 			.fale-com {
 				font-weight: 700;
 				font-size: 16px;
@@ -766,7 +771,12 @@ h3.sectionname,
 				color: $azul-1;
 
 				img {
+					width: 32px;
 					margin-right: 16px;
+
+					@media only screen and (min-width: 576px) {
+						width: auto;
+					}
 				}
 
 				@media only screen and (min-width: 576px) {
@@ -775,7 +785,11 @@ h3.sectionname,
 			}
 
 			&[data-item="inicio"] {
-				min-height: 1500px;
+				min-height: 1800px;
+
+				@media only screen and (min-width: 1480px) {
+					min-height: 1500px;
+				}
 			}
 
 			&[data-item="certificado"] {}
