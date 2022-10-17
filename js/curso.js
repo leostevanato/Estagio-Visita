@@ -248,8 +248,10 @@ window.addEventListener('load', () => {
 	});
 
 	menuLateralAlturaMin += parseInt(menuLateralStyles.paddingTop) + parseInt(menuLateralStyles.paddingBottom);
-		
-	document.getElementById('coluna-conteudo').style.minHeight = menuLateralAlturaMin + "px";
 
-	// setItemMenuAtivo(document.querySelector('.item-menu[data-item="calendario"]'));
+	if (menuLateralAlturaMin > parseInt(window.getComputedStyle(document.getElementById('coluna-conteudo')).getPropertyValue("min-height"))) {
+		document.getElementById('coluna-conteudo').style.minHeight = menuLateralAlturaMin + "px";
+	}
+
+	// setItemMenuAtivo(document.querySelector('.item-menu[data-item="atividades-avaliativas"]'));
 });
