@@ -169,7 +169,7 @@ h3.sectionname,
 }
 
 .caixa-info {
-	padding: 8px 24px;
+	padding: 8px 24px 4px;
 	gap: 8px;
 	border-radius: 48px;
 	width: fit-content;
@@ -201,20 +201,20 @@ h3.sectionname,
 	}
 
 	@media only screen and (min-width: 768px) {
-		font-size: 22px;
+		font-size: 20px;
 
 		.icone {
 			width: 24px;
-			margin-bottom: 6px;
+			margin-bottom: 4px;
 		}
 	}
 
 	@media only screen and (min-width: 1200px) {
-		font-size: 27px;
+		font-size: 23px;
 
 		.icone {
 			width: 26px;
-			margin-bottom: 8px;
+			margin-bottom: 6px;
 		}
 	}
 }
@@ -306,6 +306,10 @@ h3.sectionname,
 	line-height: 172%;
 	letter-spacing: 0.01em;
 	color: #000000;
+}
+
+ul {
+	margin-left: 20px;
 }
 
 #curso-container {
@@ -892,7 +896,6 @@ h3.sectionname,
 			&[data-item="atividades-avaliativas"] {
 				.tabela-atividades-avaliativas {
 					font-size: 20px;
-					text-align: center;
 					line-height: 130%;
 					border: 2px solid #D6D6D6;
 
@@ -935,6 +938,7 @@ h3.sectionname,
 							color: $azul-1;
 							font-weight: 800;
 							background-color: #EEEEEE;
+							text-align: center;
 						}
 					}
 				}
@@ -968,13 +972,13 @@ h3.sectionname,
 							}
 
 							@media only screen and (min-width: 1200px) {
-								font-size: 24px;
+								font-size: 22px;
 							}
 						}
 
 						.publicacao-texto {
 							font-weight: 600;
-							font-size: 24px;
+							font-size: 22px;
 							line-height: 144%;
 							color: $azul-1;
 							margin-bottom: 40px;
@@ -985,10 +989,7 @@ h3.sectionname,
 				a {
 					&.caixa-info {
 						display: block;
-
-						@media only screen and (min-width: 1200px) {
-							font-size: 23px;
-						}
+						padding-bottom: 8px;
 					}
 
 					&:hover {

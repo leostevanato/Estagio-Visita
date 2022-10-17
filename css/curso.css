@@ -74,7 +74,7 @@ h3.sectionname,
 }
 
 .caixa-info {
-  padding: 8px 24px;
+  padding: 8px 24px 4px;
   gap: 8px;
   border-radius: 48px;
   width: -webkit-fit-content;
@@ -103,20 +103,20 @@ h3.sectionname,
 }
 @media only screen and (min-width: 768px) {
   .caixa-info {
-    font-size: 22px;
+    font-size: 20px;
   }
   .caixa-info .icone {
     width: 24px;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .caixa-info {
-    font-size: 27px;
+    font-size: 23px;
   }
   .caixa-info .icone {
     width: 26px;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
 }
 
@@ -205,6 +205,10 @@ h3.sectionname,
   line-height: 172%;
   letter-spacing: 0.01em;
   color: #000000;
+}
+
+ul {
+  margin-left: 20px;
 }
 
 #curso-container {
@@ -728,7 +732,6 @@ h3.sectionname,
 }
 #curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .tabela-atividades-avaliativas {
   font-size: 20px;
-  text-align: center;
   line-height: 130%;
   border: 2px solid #D6D6D6;
   border-radius: 15px;
@@ -764,6 +767,7 @@ h3.sectionname,
   color: #063E70;
   font-weight: 800;
   background-color: #EEEEEE;
+  text-align: center;
 }
 #curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .borda-verde {
   border-left: 7px solid #73BF32;
@@ -791,23 +795,19 @@ h3.sectionname,
 }
 @media only screen and (min-width: 1200px) {
   #curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .publicacoes .publicacao .publicacao-titulo {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 #curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .publicacoes .publicacao .publicacao-texto {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 144%;
   color: #063E70;
   margin-bottom: 40px;
 }
 #curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] a.caixa-info {
   display: block;
-}
-@media only screen and (min-width: 1200px) {
-  #curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] a.caixa-info {
-    font-size: 23px;
-  }
+  padding-bottom: 8px;
 }
 #curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] a:hover {
   color: #EEEEEE;
