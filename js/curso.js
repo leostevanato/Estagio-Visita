@@ -251,5 +251,5 @@ window.addEventListener('load', () => {
 		
 	document.getElementById('coluna-conteudo').style.minHeight = menuLateralAlturaMin + "px";
 
-	// setItemMenuAtivo(document.querySelector('.item-menu[data-item="semana-1"]'));
+	// setItemMenuAtivo(document.querySelector('.item-menu[data-item="calendario"]'));
 });

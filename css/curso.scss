@@ -792,7 +792,82 @@ h3.sectionname,
 				}
 			}
 
-			&[data-item="certificado"] {}
+			&[data-item="calendario"] {
+				.tabela-calendario {
+					font-size: 20px;
+					text-align: center;
+					border: 1px solid $verde-2;
+
+					// Início - cantos arredondados
+					border-radius: 15px;
+					border-collapse: separate;
+					border-spacing: 0;
+					overflow: hidden;
+
+					/* Apply a border to the right of all but the last column */
+					th:not(:last-child),
+					td:not(:last-child) {
+						border-right: 1px solid $verde-2;
+					}
+
+					/* Apply a border to the bottom of all but the last row */
+					> thead > tr:not(:last-child) > th,
+					> thead > tr:not(:last-child) > td,
+					> tbody > tr:not(:last-child) > th,
+					> tbody > tr:not(:last-child) > td,
+					> tfoot > tr:not(:last-child) > th,
+					> tfoot > tr:not(:last-child) > td,
+					> tr:not(:last-child) > td,
+					> tr:not(:last-child) > th,
+					> thead:not(:last-child),
+					> tbody:not(:last-child),
+					> tfoot:not(:last-child) {
+						border-bottom: 1px solid $verde-2;
+					}
+					// Fim - cantos arredondados
+
+					thead {
+						> tr {
+							> th {
+								border-bottom: 1px solid $verde-2; // Tive que colocar pra funcionar borda inferior na thead
+								background: rgba(171, 227, 103, 0.75);
+								font-weight: 800;
+								line-height: 100%;
+								color: $azul-1;
+								height: 72px;
+
+								&:nth-child(1) {
+									width: 205px;
+								}
+
+								&:nth-child(2) {
+									width: 170px;
+								}
+
+								&:nth-child(4) {
+									width: 166px;
+								}
+							}
+						}
+					}
+
+					tbody {
+						color: $azul-2;
+						font-weight: 500;
+						line-height: 164%;
+
+						> tr {
+							&.fundo-claro {
+								background: rgba(171, 227, 103, 0.07);
+							}
+
+							&.fundo-escuro {
+								background: rgba(171, 227, 103, 0.23);
+							}
+						}
+					}
+				}
+			}
 		}
 
 		&[data-item-ativo="inicio"] {

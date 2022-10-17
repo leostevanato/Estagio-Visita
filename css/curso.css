@@ -652,6 +652,62 @@ h3.sectionname,
     min-height: 1500px;
   }
 }
+#curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario {
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #73BF32;
+  border-radius: 15px;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  /* Apply a border to the right of all but the last column */
+  /* Apply a border to the bottom of all but the last row */
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario th:not(:last-child),
+#curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario td:not(:last-child) {
+  border-right: 1px solid #73BF32;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario > thead > tr:not(:last-child) > th,
+#curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario > thead > tr:not(:last-child) > td,
+#curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario > tbody > tr:not(:last-child) > th,
+#curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario > tbody > tr:not(:last-child) > td,
+#curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario > tfoot > tr:not(:last-child) > th,
+#curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario > tfoot > tr:not(:last-child) > td,
+#curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario > tr:not(:last-child) > td,
+#curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario > tr:not(:last-child) > th,
+#curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario > thead:not(:last-child),
+#curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario > tbody:not(:last-child),
+#curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario > tfoot:not(:last-child) {
+  border-bottom: 1px solid #73BF32;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario thead > tr > th {
+  border-bottom: 1px solid #73BF32;
+  background: rgba(171, 227, 103, 0.75);
+  font-weight: 800;
+  line-height: 100%;
+  color: #063E70;
+  height: 72px;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario thead > tr > th:nth-child(1) {
+  width: 205px;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario thead > tr > th:nth-child(2) {
+  width: 170px;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario thead > tr > th:nth-child(4) {
+  width: 166px;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario tbody {
+  color: #032C51;
+  font-weight: 500;
+  line-height: 164%;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario tbody > tr.fundo-claro {
+  background: rgba(171, 227, 103, 0.07);
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario tbody > tr.fundo-escuro {
+  background: rgba(171, 227, 103, 0.23);
+}
 #curso-container #coluna-conteudo[data-item-ativo=inicio] {
   background-image: url("../imagens/bg_imagem_2.png");
   background-repeat: no-repeat;
