@@ -690,6 +690,10 @@ h3.sectionname,
 					font-size: 72px;
 					margin-bottom: 72px;
 				}
+
+				span {
+					font-weight: 300;
+				}
 			}
 
 			.titulo-2 {
@@ -711,6 +715,17 @@ h3.sectionname,
 
 				@media only screen and (min-width: 576px) {
 					font-size: 24px;
+				}
+			}
+
+			.titulo-4 {
+				font-weight: 400;
+				font-size: 23px;
+				line-height: 100%;
+				color: $azul-1;
+
+				@media only screen and (min-width: 576px) {
+					font-size: 27px;
 				}
 			}
 
@@ -865,6 +880,115 @@ h3.sectionname,
 								background: rgba(171, 227, 103, 0.23);
 							}
 						}
+					}
+				}
+			}
+
+			&[data-item="atividades-avaliativas"] {
+				.tabela-atividades-avaliativas {
+					font-size: 20px;
+					text-align: center;
+					line-height: 130%;
+					border: 2px solid #D6D6D6;
+
+					// Início - cantos arredondados
+					border-radius: 15px;
+					border-collapse: separate;
+					border-spacing: 0;
+					overflow: hidden;
+
+					/* Apply a border to the right of all but the last column */
+					th:not(:last-child),
+					td:not(:last-child) {
+						border-right: 2px solid #D6D6D6;
+					}
+
+					/* Apply a border to the bottom of all but the last row */
+					> thead > tr:not(:last-child) > th,
+					> thead > tr:not(:last-child) > td,
+					> tbody > tr:not(:last-child) > th,
+					> tbody > tr:not(:last-child) > td,
+					> tfoot > tr:not(:last-child) > th,
+					> tfoot > tr:not(:last-child) > td,
+					> tr:not(:last-child) > td,
+					> tr:not(:last-child) > th,
+					> thead:not(:last-child),
+					> tbody:not(:last-child),
+					> tfoot:not(:last-child) {
+						border-bottom: 2px solid #D6D6D6;
+					}
+					// Fim - cantos arredondados
+
+					tr {
+						> td:nth-child(1) {
+							color: #000000;
+							font-weight: 600;
+						}
+
+						> td:nth-child(2) {
+							width: 136px;
+							color: $azul-1;
+							font-weight: 800;
+							background-color: #EEEEEE;
+						}
+					}
+				}
+
+				.borda-verde {
+					border-left: 7px solid $verde-2;
+					padding-left: 9px;
+				}
+
+				.publicacoes {
+					.publicacao {
+						padding: 0 32px 56px 32px;
+						border-bottom: 2px solid $verde-2;
+
+						.publicacao-titulo {
+							font-weight: 800;
+							font-size: 14px;
+							line-height: 100%;
+							color: $verde-2;
+
+							.ponto {
+								font-size: 12px;
+								margin-left: 8px;
+								margin-right: 8px;
+								vertical-align: bottom;
+							}
+
+							.texto-azul {
+								font-weight: 800;
+								color: $azul-1;
+							}
+
+							@media only screen and (min-width: 1200px) {
+								font-size: 24px;
+							}
+						}
+
+						.publicacao-texto {
+							font-weight: 600;
+							font-size: 24px;
+							line-height: 144%;
+							color: $azul-1;
+							margin-bottom: 40px;
+						}
+					}
+				}
+
+				a {
+					&.caixa-info {
+						display: block;
+
+						@media only screen and (min-width: 1200px) {
+							font-size: 23px;
+						}
+					}
+
+					&:hover {
+						color: #EEEEEE;
+						text-decoration: none;
 					}
 				}
 			}

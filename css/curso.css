@@ -548,6 +548,9 @@ h3.sectionname,
     margin-bottom: 72px;
   }
 }
+#curso-container #coluna-conteudo .item-conteudo .titulo span {
+  font-weight: 300;
+}
 #curso-container #coluna-conteudo .item-conteudo .titulo-2 {
   font-weight: 400;
   font-size: 24px;
@@ -568,6 +571,17 @@ h3.sectionname,
 @media only screen and (min-width: 576px) {
   #curso-container #coluna-conteudo .item-conteudo .titulo-3 {
     font-size: 24px;
+  }
+}
+#curso-container #coluna-conteudo .item-conteudo .titulo-4 {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 100%;
+  color: #063E70;
+}
+@media only screen and (min-width: 576px) {
+  #curso-container #coluna-conteudo .item-conteudo .titulo-4 {
+    font-size: 27px;
   }
 }
 #curso-container #coluna-conteudo .item-conteudo .assunto {
@@ -707,6 +721,93 @@ h3.sectionname,
 }
 #curso-container #coluna-conteudo .item-conteudo[data-item=calendario] .tabela-calendario tbody > tr.fundo-escuro {
   background: rgba(171, 227, 103, 0.23);
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .tabela-atividades-avaliativas {
+  font-size: 20px;
+  text-align: center;
+  line-height: 130%;
+  border: 2px solid #D6D6D6;
+  border-radius: 15px;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  /* Apply a border to the right of all but the last column */
+  /* Apply a border to the bottom of all but the last row */
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .tabela-atividades-avaliativas th:not(:last-child),
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .tabela-atividades-avaliativas td:not(:last-child) {
+  border-right: 2px solid #D6D6D6;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .tabela-atividades-avaliativas > thead > tr:not(:last-child) > th,
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .tabela-atividades-avaliativas > thead > tr:not(:last-child) > td,
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .tabela-atividades-avaliativas > tbody > tr:not(:last-child) > th,
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .tabela-atividades-avaliativas > tbody > tr:not(:last-child) > td,
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .tabela-atividades-avaliativas > tfoot > tr:not(:last-child) > th,
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .tabela-atividades-avaliativas > tfoot > tr:not(:last-child) > td,
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .tabela-atividades-avaliativas > tr:not(:last-child) > td,
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .tabela-atividades-avaliativas > tr:not(:last-child) > th,
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .tabela-atividades-avaliativas > thead:not(:last-child),
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .tabela-atividades-avaliativas > tbody:not(:last-child),
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .tabela-atividades-avaliativas > tfoot:not(:last-child) {
+  border-bottom: 2px solid #D6D6D6;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .tabela-atividades-avaliativas tr > td:nth-child(1) {
+  color: #000000;
+  font-weight: 600;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .tabela-atividades-avaliativas tr > td:nth-child(2) {
+  width: 136px;
+  color: #063E70;
+  font-weight: 800;
+  background-color: #EEEEEE;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .borda-verde {
+  border-left: 7px solid #73BF32;
+  padding-left: 9px;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .publicacoes .publicacao {
+  padding: 0 32px 56px 32px;
+  border-bottom: 2px solid #73BF32;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .publicacoes .publicacao .publicacao-titulo {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 100%;
+  color: #73BF32;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .publicacoes .publicacao .publicacao-titulo .ponto {
+  font-size: 12px;
+  margin-left: 8px;
+  margin-right: 8px;
+  vertical-align: bottom;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .publicacoes .publicacao .publicacao-titulo .texto-azul {
+  font-weight: 800;
+  color: #063E70;
+}
+@media only screen and (min-width: 1200px) {
+  #curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .publicacoes .publicacao .publicacao-titulo {
+    font-size: 24px;
+  }
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] .publicacoes .publicacao .publicacao-texto {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 144%;
+  color: #063E70;
+  margin-bottom: 40px;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] a.caixa-info {
+  display: block;
+}
+@media only screen and (min-width: 1200px) {
+  #curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] a.caixa-info {
+    font-size: 23px;
+  }
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] a:hover {
+  color: #EEEEEE;
+  text-decoration: none;
 }
 #curso-container #coluna-conteudo[data-item-ativo=inicio] {
   background-image: url("../imagens/bg_imagem_2.png");
