@@ -7,30 +7,37 @@
 		"items": [
 			{
 				"mostrar": true,
+				"bloquear": false,
 				"texto": "Início"
 			},
 			{
 				"mostrar": true,
+				"bloquear": false,
 				"texto": "Calendário"
 			},
 			{
 				"mostrar": true,
+				"bloquear": false,
 				"texto": "Atividades avaliativas"
 			},
 			{
 				"mostrar": true,
+				"bloquear": false,
 				"texto": "Semana 1"
 			},
 			{
 				"mostrar": true,
+				"bloquear": true,
 				"texto": "Semana 2"
 			},
 			{
 				"mostrar": true,
+				"bloquear": true,
 				"texto": "Semana 3"
 			},
 			{
 				"mostrar": true,
+				"bloquear": true,
 				"texto": "Certificado"
 			}
 		]

@@ -391,6 +391,10 @@ h3.sectionname,
 #curso-container #menu-lateral .item-menu.ativo .marcador-ativo {
   visibility: visible;
 }
+#curso-container #menu-lateral .item-menu.bloqueado {
+  opacity: 0.4;
+  cursor: default;
+}
 #curso-container #menu-lateral .item-menu[data-link]:not([data-link=""])::after {
   content: "";
   display: inline-block;

@@ -97,6 +97,68 @@ document.addEventListener("DOMContentLoaded", () => {
 	configuracoes_promise.then(response => {
 		return response.json();
 	}).then(configuracoesJSON => {
+		let conta_itens = 0;
+		let value = "";
+
+		configuracoesJSON.menu.items.forEach(item => {
+			if (item.mostrar) {
+				value = item.texto;
+
+				let novo_item = document.createElement("div");
+
+				novo_item.classList.add("item-menu");
+
+				if (item.bloquear) {
+					novo_item.classList.add("bloqueado");
+				}
+
+				novo_item.dataset.item = slugify(value);
+
+				let marcador_ativo = document.createElement("span");
+				marcador_ativo.classList.add("marcador-ativo");
+
+				let texto = document.createElement("span");
+				texto.innerText = value;
+				texto.classList.add("texto");
+
+				novo_item.appendChild(marcador_ativo);
+				novo_item.appendChild(texto);
+				menuLateral.appendChild(novo_item);
+
+				let itemConteudo = document.querySelector('.item-conteudo[data-item="' + novo_item.getAttribute("data-item") + '"]');
+
+				if (itemConteudo.getAttribute("data-link") != null) {
+					novo_item.dataset.link = itemConteudo.getAttribute("data-link");
+				}
+
+				if (!item.bloquear) {
+					novo_item.addEventListener("click", function(event) {
+						if (novo_item.getAttribute("data-link") != null) {
+							window.open(novo_item.getAttribute("data-link"));
+							return false;
+						} else {
+							setItemMenuAtivo(novo_item);
+							menuLateral.dispatchEvent(fecharMenu);
+						}
+					});
+				}
+
+				if (conta_itens == 0) {
+					setItemMenuAtivo(novo_item);
+				}
+
+				if (conta_itens != itens_menu.length - 1) {
+					var item_menu_separador = document.createElement("div");
+
+					item_menu_separador.classList.add("item-menu-separador");
+
+					menuLateral.appendChild(item_menu_separador);
+				}
+
+				conta_itens++;
+			}
+		});
+		/*
 		configuracoesJSON.menu.items.forEach(item => {
 			if (item.mostrar) {
 				itens_menu.push(item.texto);
@@ -148,6 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				menuLateral.appendChild(item_menu_separador);
 			}
 		});
+		*/
 	}).catch(error => {
 		console.log("ERRO: " + error);
 	});

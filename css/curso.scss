@@ -523,6 +523,11 @@ h3.sectionname,
 				}
 			}
 
+			&.bloqueado {
+				opacity: 0.4;
+				cursor: default;
+			}
+
 			&[data-link]:not([data-link=""]) {
 				&::after {
 					content: '';
