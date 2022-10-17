@@ -3,6 +3,10 @@
 	"ano": 2022,
 	"turma": "A-XX",
 	"idNoMoodle": 650,
+	"idUrlTermoCompromisso": 99900,
+	"idUrlEnviarArquivoPublicacao1": 99901,
+	"idUrlEnviarArquivoPublicacao2": 99902,
+	"idUrlEnviarArquivoPublicacao3": 99903,
 	"menu": {
 		"items": [
 			{

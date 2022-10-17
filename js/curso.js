@@ -158,6 +158,16 @@ document.addEventListener("DOMContentLoaded", () => {
 				conta_itens++;
 			}
 		});
+
+		document.querySelector('.item-conteudo[data-item="inicio"] .enviar-termo > a').setAttribute('href', urlTermoCompromisso + configuracoesJSON.idUrlTermoCompromisso);
+
+		let contaEnviarArqPubli = 1;
+
+		while (configuracoesJSON['idUrlEnviarArquivoPublicacao' + contaEnviarArqPubli]) {
+			document.querySelector('#publicacao-' + contaEnviarArqPubli + ' > a.enviar-arquivo').setAttribute('href', urlEnviarArquivoPublicacao + configuracoesJSON['idUrlEnviarArquivoPublicacao' + contaEnviarArqPubli]);
+
+			contaEnviarArqPubli++;
+		}
 	}).catch(error => {
 		console.log("ERRO: " + error);
 	});
