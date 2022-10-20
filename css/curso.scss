@@ -289,7 +289,7 @@ h3.sectionname,
 	width: fit-content;
 	
 	img {
-		border-bottom: 7px solid #73BF32;
+		border-bottom: 7px solid $verde-2;
 		border-radius: 0px 96px 0px 0px;
 		margin-bottom: 16px;
 
@@ -297,6 +297,19 @@ h3.sectionname,
 			border-radius: 0px 196px 0px 0px;
 		}
 	}
+}
+
+.box-destaque {
+	background: $verde-3;
+	border-bottom: 3px solid $azul-1;
+	border-radius: 0px 32px 0px 0px;
+	padding: 24px 16px;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 172%;
+	text-align: center;
+	letter-spacing: -0.02em;
+	color: $azul-2;
 }
 
 .creditos {

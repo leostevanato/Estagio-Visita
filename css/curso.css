@@ -198,6 +198,19 @@ h3.sectionname,
   }
 }
 
+.box-destaque {
+  background: #ABE367;
+  border-bottom: 3px solid #063E70;
+  border-radius: 0px 32px 0px 0px;
+  padding: 24px 16px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 172%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #032C51;
+}
+
 .creditos {
   display: block;
   font-weight: 400;
