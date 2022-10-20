@@ -63,6 +63,9 @@ h3.sectionname,
 .margem-top-1 {
   margin-top: 72px;
 }
+.margem-top-2 {
+  margin-top: 56px;
+}
 .margem-bottom-1 {
   margin-bottom: 72px;
 }
@@ -209,6 +212,34 @@ h3.sectionname,
   text-align: center;
   letter-spacing: -0.02em;
   color: #032C51;
+}
+
+.box-atencao {
+  display: flex;
+  gap: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 152%;
+  color: #032C51;
+  background-color: rgba(6, 62, 112, 0.09);
+  border: 3px solid #063E70;
+  border-radius: 32px 32px 32px 0px;
+  padding: 12px;
+}
+.box-atencao img {
+  width: 32px;
+  height: 32px;
+}
+@media only screen and (min-width: 768px) {
+  .box-atencao {
+    font-size: 20px;
+    padding: 24px;
+    line-height: 172%;
+  }
+  .box-atencao img {
+    width: 49px;
+    height: 49px;
+  }
 }
 
 .creditos {
@@ -825,6 +856,47 @@ ul {
 #curso-container #coluna-conteudo .item-conteudo[data-item=atividades-avaliativas] a:hover {
   color: #EEEEEE;
   text-decoration: none;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=certificado] a.gerar-certificado {
+  display: none;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=certificado] a.caixa-info {
+  padding: 8px 24px 4px;
+  margin-top: 56px;
+}
+@media only screen and (min-width: 768px) {
+  #curso-container #coluna-conteudo .item-conteudo[data-item=certificado] a.caixa-info {
+    padding: 8px 24px;
+  }
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=certificado] .info-certificado {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 162%;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #73BF32;
+  flex-wrap: wrap;
+  max-width: 656px;
+  justify-content: center;
+  margin-top: 56px;
+  margin-bottom: 56px;
+  gap: 60px 40px;
+}
+@media only screen and (min-width: 992px) {
+  #curso-container #coluna-conteudo .item-conteudo[data-item=certificado] .info-certificado {
+    font-size: 23px;
+    justify-content: space-between;
+  }
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=certificado] .info-certificado .info-box img {
+  margin-bottom: 24px;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=certificado] .info-certificado .info-box.esquerda {
+  width: 261px;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=certificado] .info-certificado .info-box.direita {
+  width: 307px;
 }
 #curso-container #coluna-conteudo[data-item-ativo=inicio] {
   background-image: url("../imagens/bg_imagem_2.png");

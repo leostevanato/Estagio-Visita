@@ -151,6 +151,10 @@ h3.sectionname,
 		&-1 {
 			margin-top: 72px;
 		}
+
+		&-2 {
+			margin-top: 56px;
+		}
 	}
 
 	&-bottom {
@@ -310,6 +314,36 @@ h3.sectionname,
 	text-align: center;
 	letter-spacing: -0.02em;
 	color: $azul-2;
+}
+
+.box-atencao {
+	display: flex;
+	gap: 14px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 152%;
+	color: $azul-2;
+	background-color: rgba(6, 62, 112, 0.09);
+	border: 3px solid $azul-1;
+	border-radius: 32px 32px 32px 0px;
+	padding: 12px;
+
+	img {
+		width: 32px;
+		height: 32px;
+	}
+
+	
+	@media only screen and (min-width: 768px) {
+		font-size: 20px;
+		padding: 24px;
+		line-height: 172%;
+
+		img {
+			width: 49px;
+			height: 49px;
+		}
+	}
 }
 
 .creditos {
@@ -1008,6 +1042,58 @@ ul {
 					&:hover {
 						color: #EEEEEE;
 						text-decoration: none;
+					}
+				}
+			}
+
+			&[data-item="certificado"] {
+				a {
+					&.gerar-certificado {
+						display: none; // Aguardando link
+						// display: block;
+					}
+
+					&.caixa-info {
+						padding: 8px 24px 4px;
+						margin-top: 56px;
+
+						@media only screen and (min-width: 768px) {
+							padding: 8px 24px;
+						}
+					}
+				}
+
+				.info-certificado {
+					font-weight: 600;
+					font-size: 16px;
+					line-height: 162%;
+					text-align: center;
+					letter-spacing: -0.01em;
+					color: #73BF32;
+					flex-wrap: wrap;
+					max-width: 656px;
+					justify-content: center;
+					margin-top: 56px;
+					margin-bottom: 56px;
+					gap: 60px 40px;
+
+					@media only screen and (min-width: 992px) {
+						font-size: 23px;
+						justify-content: space-between;
+					}
+
+					.info-box {
+						img {
+							margin-bottom: 24px;
+						}
+
+						&.esquerda {
+							width: 261px;
+						}
+
+						&.direita {
+							width: 307px;
+						}
 					}
 				}
 			}
