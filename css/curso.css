@@ -126,7 +126,12 @@ h3.sectionname,
 .objetos {
   display: flex;
   flex-wrap: wrap;
-  gap: 52px;
+  gap: 42px;
+}
+@media only screen and (min-width: 576px) {
+  .objetos {
+    gap: 52px;
+  }
 }
 
 .objeto {
@@ -138,34 +143,40 @@ h3.sectionname,
   width: 100%;
 }
 .objeto-conteudo {
-  height: 317px;
+  height: 210px;
   background-color: #ABE367;
   border-radius: 0px 136px 0px 0px;
   padding: 24px 28px 24px 30px;
 }
 @media only screen and (min-width: 576px) {
   .objeto-conteudo {
-    height: 256px;
+    height: 236px;
     padding: 32px 38px 32px 56px;
   }
 }
 .objeto-tipo {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 242%;
   color: #063E70;
   text-transform: uppercase;
 }
+@media only screen and (min-width: 576px) {
+  .objeto-tipo {
+    font-size: 16px;
+  }
+}
 .objeto-titulo {
-  height: 180px;
+  height: 90px;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 100%;
   color: #063E70;
 }
 @media only screen and (min-width: 576px) {
   .objeto-titulo {
-    height: 105px;
+    height: 85px;
+    font-size: 24px;
   }
 }
 .objeto-botao {
@@ -173,11 +184,16 @@ h3.sectionname,
   background-color: #063E70;
   border-radius: 57px;
   font-weight: 800;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 242%;
   color: #ffffff;
   padding: 0 24px;
   text-decoration: none;
+}
+@media only screen and (min-width: 576px) {
+  .objeto-botao {
+    font-size: 20px;
+  }
 }
 .objeto-botao:hover {
   opacity: 0.9;

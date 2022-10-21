@@ -226,7 +226,11 @@ h3.sectionname,
 .objetos {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 52px;
+	gap: 42px;
+	
+	@media only screen and (min-width: 576px) {
+		gap: 52px;
+	}
 }
 
 .objeto {
@@ -239,34 +243,39 @@ h3.sectionname,
 	}
 
 	&-conteudo {
-		height: 317px;
+		height: 210px;
 		background-color: $verde-3;
 		border-radius: 0px 136px 0px 0px;
 		padding: 24px 28px 24px 30px;
 
 		@media only screen and (min-width: 576px) {
-			height: 256px;
+			height: 236px;
 			padding: 32px 38px 32px 56px;
 		}
 	}
 
 	&-tipo {
 		font-weight: 700;
-		font-size: 16px;
+		font-size: 14px;
 		line-height: 242%;
 		color: $azul-1;
 		text-transform: uppercase;
+
+		@media only screen and (min-width: 576px) {
+			font-size: 16px;
+		}
 	}
 
 	&-titulo {
-		height: 180px;
+		height: 90px;
 		font-weight: 700;
-		font-size: 24px;
+		font-size: 20px;
 		line-height: 100%;
 		color: $azul-1;
 
 		@media only screen and (min-width: 576px) {
-			height: 105px;
+			height: 85px;
+			font-size: 24px;
 		}
 	}
 
@@ -275,12 +284,16 @@ h3.sectionname,
 		background-color: $azul-1;
 		border-radius: 57px;
 		font-weight: 800;
-		font-size: 20px;
+		font-size: 16px;
 		line-height: 242%;
 		color: #ffffff;
 		padding: 0 24px;
 		text-decoration: none;
 	
+		@media only screen and (min-width: 576px) {
+			font-size: 20px;
+		}
+
 		&:hover {
 			opacity: 0.9;
 			color: #ffffff;
