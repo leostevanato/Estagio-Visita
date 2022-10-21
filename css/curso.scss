@@ -287,6 +287,31 @@ h3.sectionname,
 			text-decoration: none;
 		}
 	}
+
+	&.aula-sincrona {
+		margin-top: 24px;
+
+		.objeto {
+			&-conteudo {
+				height: auto;
+			}
+
+			&-titulo {
+				height: auto;
+			}
+		}
+
+		.aula-sincrona-dados-acesso {
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 120%;
+			color: $azul-1;
+			margin: {
+				top: 16px;
+				bottom: 22px;
+			}
+		}
+	}
 }
 
 .imagem-semana {

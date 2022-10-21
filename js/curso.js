@@ -273,5 +273,5 @@ window.addEventListener('load', () => {
 		document.getElementById('coluna-conteudo').style.minHeight = menuLateralAlturaMin + "px";
 	}
 
-	// setItemMenuAtivo(document.querySelector('.item-menu[data-item="atividades-avaliativas"]'));
+	setItemMenuAtivo(document.querySelector('.item-menu[data-item="semana-2"]'));
 });

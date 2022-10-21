@@ -184,6 +184,23 @@ h3.sectionname,
   color: #ffffff;
   text-decoration: none;
 }
+.objeto.aula-sincrona {
+  margin-top: 24px;
+}
+.objeto.aula-sincrona .objeto-conteudo {
+  height: auto;
+}
+.objeto.aula-sincrona .objeto-titulo {
+  height: auto;
+}
+.objeto.aula-sincrona .aula-sincrona-dados-acesso {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #063E70;
+  margin-top: 16px;
+  margin-bottom: 22px;
+}
 
 .imagem-semana {
   width: -webkit-fit-content;

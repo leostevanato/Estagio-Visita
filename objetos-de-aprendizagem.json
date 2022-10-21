@@ -45,5 +45,60 @@
 				"thumbAlt": ""
 			}
 		]
+	},
+	{
+		"id": 2,
+		"itemConteudo": "semana-2",
+		"titulo": "Semana 2",
+		"objetos": [
+			{
+				"tipo": "Vídeo",
+				"titulo": "Funcionamento do Parlamento",
+				"botaoTexto": "Assistir",
+				"botaoLink": "https://evc.camara.leg.br/material/funcionamento-do-parlamento/",
+				"thumb": "funcionamento-do-parlamento.jpg",
+				"thumbAlt": ""
+			},
+			{
+				"tipo": "Portal",
+				"titulo": "Papel e estrutura da Câmara dos Deputados",
+				"botaoTexto": "Acessar",
+				"botaoLink": "https://evc.camara.leg.br/material/papel-e-estrutura-da-camara-dos-deputados/",
+				"thumb": "papel-e-estrutura-da-camara-dos-deputados.jpg",
+				"thumbAlt": ""
+			},
+			{
+				"tipo": "Portal",
+				"titulo": "Entenda o processo legislativo",
+				"botaoTexto": "Acessar",
+				"botaoLink": "https://www.camara.leg.br/entenda-o-processo-legislativo/",
+				"thumb": "entenda-o-processo-legislativo.jpg",
+				"thumbAlt": ""
+			},
+			{
+				"tipo": "Vídeo",
+				"titulo": "O dia do Deputado na Câmara",
+				"botaoTexto": "Assistir",
+				"botaoLink": "https://evc.camara.leg.br/material/o-dia-do-deputado-na-camara/",
+				"thumb": "o-dia-do-deputado-na-camara.jpg",
+				"thumbAlt": ""
+			},
+			{
+				"tipo": "Série de vídeos",
+				"titulo": "Videoaulas de processo legislativo",
+				"botaoTexto": "Assistir",
+				"botaoLink": "https://evc.camara.leg.br/material/videoaulas-de-processo-legislativo/",
+				"thumb": "videoaulas-de-processo-legislativo.jpg",
+				"thumbAlt": ""
+			},
+			{
+				"tipo": "Vídeo",
+				"titulo": "Verdade ou consequência? Deputados e Cidadãos",
+				"botaoTexto": "Assistir",
+				"botaoLink": "https://evc.camara.leg.br/material/verdade-ou-consequencia-deputados-e-cidadaos/",
+				"thumb": "verdade-ou-consequencia-deputados-e-cidadaos.jpg",
+				"thumbAlt": ""
+			}
+		]
 	}
 ]
