@@ -249,6 +249,9 @@ h3.sectionname,
 
 .box-atencao {
   display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   gap: 14px;
   font-weight: 400;
   font-size: 14px;
