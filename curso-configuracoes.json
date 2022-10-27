@@ -7,6 +7,7 @@
 	"idUrlEnviarArquivoPublicacao1": 99901,
 	"idUrlEnviarArquivoPublicacao2": 99902,
 	"idUrlEnviarArquivoPublicacao3": 99903,
+	"idUrlSemana3AcessarFormulario": 99904,
 	"menu": {
 		"items": [
 			{
@@ -31,17 +32,17 @@
 			},
 			{
 				"mostrar": true,
-				"bloquear": true,
+				"bloquear": false,
 				"texto": "Semana 2"
 			},
 			{
 				"mostrar": true,
-				"bloquear": true,
+				"bloquear": false,
 				"texto": "Semana 3"
 			},
 			{
 				"mostrar": true,
-				"bloquear": true,
+				"bloquear": false,
 				"texto": "Certificado"
 			}
 		]

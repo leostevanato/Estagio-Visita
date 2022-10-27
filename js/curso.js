@@ -161,6 +161,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		document.querySelector('.item-conteudo[data-item="inicio"] .enviar-termo > a').setAttribute('href', urlTermoCompromisso + configuracoesJSON.idUrlTermoCompromisso);
 
+		document.querySelector('.item-conteudo[data-item="semana-3"] a.acessar-formulario').setAttribute('href', urlAcessarFormulario + configuracoesJSON.idUrlSemana3AcessarFormulario);
+
 		let contaEnviarArqPubli = 1;
 
 		while (configuracoesJSON['idUrlEnviarArquivoPublicacao' + contaEnviarArqPubli]) {
@@ -273,5 +275,5 @@ window.addEventListener('load', () => {
 		document.getElementById('coluna-conteudo').style.minHeight = menuLateralAlturaMin + "px";
 	}
 
-	// setItemMenuAtivo(document.querySelector('.item-menu[data-item="semana-2"]'));
+	// setItemMenuAtivo(document.querySelector('.item-menu[data-item="semana-3"]'));
 });

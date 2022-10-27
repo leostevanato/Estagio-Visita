@@ -100,5 +100,76 @@
 				"thumbAlt": ""
 			}
 		]
+	},
+	{
+		"id": 3,
+		"itemConteudo": "semana-3",
+		"titulo": "Semana 3",
+		"objetos": [
+			{
+				"tipo": "Material multimídia",
+				"titulo": "Como acompanhar e cobrar a sua Deputada, o seu Deputado",
+				"botaoTexto": "Acessar",
+				"botaoLink": "https://evc.camara.leg.br/material/como-acompanhar-e-cobrar-o-seu-deputado/",
+				"thumb": "como-acompanhar-e-cobrar-a-sua-deputada-o-seu-deputado.jpg",
+				"thumbAlt": ""
+			},
+			{
+				"tipo": "Portal",
+				"titulo": "Transparência na Câmara dos Deputados",
+				"botaoTexto": "Acessar",
+				"botaoLink": "https://www.camara.leg.br/transparencia/",
+				"thumb": "transparencia-na-camara-dos-deputados.jpg",
+				"thumbAlt": ""
+			},
+			{
+				"tipo": "Áudio",
+				"titulo": "Como vivo minha cidadania?",
+				"botaoTexto": "Ouvir",
+				"botaoLink": "https://evc.camara.leg.br/material/como-eu-vivo-a-minha-cidadania/",
+				"thumb": "como-vivo-minha-cidadania.jpg",
+				"thumbAlt": ""
+			},
+			{
+				"tipo": "Áudio",
+				"titulo": "Conversas Democráticas",
+				"botaoTexto": "Ouvir",
+				"botaoLink": "https://evc.camara.leg.br/material/conversas-democraticas/",
+				"thumb": "conversas-democraticas.jpg",
+				"thumbAlt": ""
+			},
+			{
+				"tipo": "Áudio",
+				"titulo": "Controle Social: você sabe o que é?",
+				"botaoTexto": "Ouvir",
+				"botaoLink": "https://evc.camara.leg.br/material/controle-social-voce-sabe-o-que-e/",
+				"thumb": "controle-social-voce-sabe-o-que-e.jpg",
+				"thumbAlt": ""
+			},
+			{
+				"tipo": "Texto",
+				"titulo": "O que é lobby?",
+				"botaoTexto": "Ler",
+				"botaoLink": "https://evc.camara.leg.br/material/o-que-e-lobby/",
+				"thumb": "o-que-e-lobby.jpg",
+				"thumbAlt": ""
+			},
+			{
+				"tipo": "Quiz",
+				"titulo": "Quem é você decidindo o futuro do país?",
+				"botaoTexto": "Ler",
+				"botaoLink": "https://evc.camara.leg.br/quiz_quem_e_voce_decidindo_o_futuro_do_pais/",
+				"thumb": "quem-e-voce-decidindo-o-futuro-do-pais.jpg",
+				"thumbAlt": ""
+			},
+			{
+				"tipo": "Web Stories",
+				"titulo": "Guia para sair do sofá",
+				"botaoTexto": "Ler",
+				"botaoLink": "https://evc.camara.leg.br/material/guia-para-sair-do-sofa/",
+				"thumb": "guia-para-sair-do-sofa.jpg",
+				"thumbAlt": ""
+			}
+		]
 	}
 ]

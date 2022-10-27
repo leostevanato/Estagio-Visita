@@ -66,6 +66,12 @@ h3.sectionname,
 .margem-top-2 {
   margin-top: 56px;
 }
+.margem-top-3 {
+  margin-top: 42px;
+}
+.margem-top-4 {
+  margin-top: 32px;
+}
 .margem-bottom-1 {
   margin-bottom: 72px;
 }
@@ -74,6 +80,9 @@ h3.sectionname,
 }
 .margem-bottom-3 {
   margin-bottom: 42px;
+}
+.margem-bottom-4 {
+  margin-bottom: 32px;
 }
 
 .caixa-info {
@@ -200,9 +209,6 @@ h3.sectionname,
   color: #ffffff;
   text-decoration: none;
 }
-.objeto.aula-sincrona {
-  margin-top: 24px;
-}
 .objeto.aula-sincrona .objeto-conteudo {
   height: auto;
 }
@@ -289,6 +295,27 @@ h3.sectionname,
 
 ul {
   margin-left: 20px;
+}
+
+a.acessar-formulario {
+  display: block;
+  padding-bottom: 3px;
+}
+@media only screen and (min-width: 768px) {
+  a.acessar-formulario {
+    padding-bottom: 8px;
+  }
+}
+a.acessar-formulario img {
+  width: 16px;
+  vertical-align: top;
+  margin-right: 12px;
+}
+@media only screen and (min-width: 768px) {
+  a.acessar-formulario img {
+    width: 22px;
+    vertical-align: text-top;
+  }
 }
 
 #curso-container {
@@ -898,7 +925,6 @@ ul {
 }
 #curso-container #coluna-conteudo .item-conteudo[data-item=certificado] a.caixa-info {
   padding: 8px 24px 4px;
-  margin-top: 56px;
 }
 @media only screen and (min-width: 768px) {
   #curso-container #coluna-conteudo .item-conteudo[data-item=certificado] a.caixa-info {
