@@ -34,21 +34,13 @@ function criarObjeto(objeto) {
 	return novo_objeto;
 }
 
-let objetos_aprendizagem_promise = fetch(url_mdl_arquivos + 'objetos-de-aprendizagem.json');
-
 document.addEventListener("DOMContentLoaded", () => {
-	objetos_aprendizagem_promise.then(response => {
-		return response.json();
-	}).then(objetosJSON => {
-		objetosJSON.forEach(item => {
-			let elemento_objetos = document.querySelector('.item-conteudo[data-item="' + item.itemConteudo + '"] .objetos');
+	objetosAprendizagemJSON.forEach(item => {
+		let elemento_objetos = document.querySelector('.item-conteudo[data-item="' + item.itemConteudo + '"] .objetos');
 
-			item.objetos.forEach(objeto => {
-				let novo_objeto = criarObjeto(objeto);
-				elemento_objetos.appendChild(novo_objeto);
-			});
+		item.objetos.forEach(objeto => {
+			let novo_objeto = criarObjeto(objeto);
+			elemento_objetos.appendChild(novo_objeto);
 		});
-	}).catch(error => {
-		console.log("ERRO: " + error);
 	});
 });

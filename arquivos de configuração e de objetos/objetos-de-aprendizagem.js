@@ -1,4 +1,4 @@
-[
+var objetosAprendizagemJSON = [
 	{
 		"id": 1,
 		"itemConteudo": "semana-1",
@@ -172,4 +172,4 @@
 			}
 		]
 	}
-]
+];

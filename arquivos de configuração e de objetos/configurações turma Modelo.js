@@ -1,13 +1,13 @@
-{
-	"titulo": "Estágio Visita",
+var configuracoesJSON = {
+	"titulo": "Curso Modelo",
 	"ano": 2022,
-	"turma": "A-22",
-	"idNoMoodle": 648,
-	"idUrlTermoCompromisso": 16142,
-	"idUrlEnviarArquivoPublicacao1": 16141,
-	"idUrlEnviarArquivoPublicacao2": 16143,
-	"idUrlEnviarArquivoPublicacao3": 16144,
-	"idUrlSemana3AcessarFormulario": 16176,
+	"turma": "A-XX",
+	"idNoMoodle": 650,
+	"idUrlTermoCompromisso": 99900,
+	"idUrlEnviarArquivoPublicacao1": 99901,
+	"idUrlEnviarArquivoPublicacao2": 99902,
+	"idUrlEnviarArquivoPublicacao3": 99903,
+	"idUrlSemana3AcessarFormulario": 99904,
 	"menu": {
 		"items": [
 			{
@@ -47,4 +47,4 @@
 			}
 		]
 	}
-}
+};

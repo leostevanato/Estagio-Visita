@@ -77,8 +77,6 @@ var item_menu_ativo;
 var layout_mobile_width = 768;
 var layout_mobile = true;
 
-let configuracoes_promise = fetch(url_mdl_arquivos + 'curso-configuracoes.json');
-
 document.addEventListener("DOMContentLoaded", () => {
 	substituirTextoInnerHtml(document.querySelector('#curso-container'), string_alvo, codigo_pasta_arquivos);
 
@@ -94,86 +92,80 @@ document.addEventListener("DOMContentLoaded", () => {
 	const trocarMenu = new Event('trocar');
 	const itens_menu = [];
 
-	configuracoes_promise.then(response => {
-		return response.json();
-	}).then(configuracoesJSON => {
-		let conta_itens = 0;
-		let value = "";
+	let conta_itens = 0;
+	let value = "";
 
-		configuracoesJSON.menu.items.forEach(item => {
-			if (item.mostrar) {
-				value = item.texto;
+	configuracoesJSON.menu.items.forEach(item => {
+		if (item.mostrar) {
+			value = item.texto;
 
-				let novo_item = document.createElement("div");
+			let novo_item = document.createElement("div");
 
-				novo_item.classList.add("item-menu");
+			novo_item.classList.add("item-menu");
 
-				if (item.bloquear) {
-					novo_item.classList.add("bloqueado");
-				}
-
-				novo_item.dataset.item = slugify(value);
-
-				let marcador_ativo = document.createElement("span");
-				marcador_ativo.classList.add("marcador-ativo");
-
-				let texto = document.createElement("span");
-				texto.innerText = value;
-				texto.classList.add("texto");
-
-				novo_item.appendChild(marcador_ativo);
-				novo_item.appendChild(texto);
-				menuLateral.appendChild(novo_item);
-
-				let itemConteudo = document.querySelector('.item-conteudo[data-item="' + novo_item.getAttribute("data-item") + '"]');
-
-				if (itemConteudo.getAttribute("data-link") != null) {
-					novo_item.dataset.link = itemConteudo.getAttribute("data-link");
-				}
-
-				if (!item.bloquear) {
-					novo_item.addEventListener("click", function(event) {
-						if (novo_item.getAttribute("data-link") != null) {
-							window.open(novo_item.getAttribute("data-link"));
-							return false;
-						} else {
-							setItemMenuAtivo(novo_item);
-							menuLateral.dispatchEvent(fecharMenu);
-						}
-					});
-				}
-
-				if (conta_itens == 0) {
-					setItemMenuAtivo(novo_item);
-				}
-
-				if (conta_itens != itens_menu.length - 1) {
-					var item_menu_separador = document.createElement("div");
-
-					item_menu_separador.classList.add("item-menu-separador");
-
-					menuLateral.appendChild(item_menu_separador);
-				}
-
-				conta_itens++;
+			if (item.bloquear) {
+				novo_item.classList.add("bloqueado");
 			}
-		});
 
-		document.querySelector('.item-conteudo[data-item="inicio"] .enviar-termo > a').setAttribute('href', urlTermoCompromisso + configuracoesJSON.idUrlTermoCompromisso);
+			novo_item.dataset.item = slugify(value);
 
-		document.querySelector('.item-conteudo[data-item="semana-3"] a.acessar-formulario').setAttribute('href', urlAcessarFormulario + configuracoesJSON.idUrlSemana3AcessarFormulario);
+			let marcador_ativo = document.createElement("span");
+			marcador_ativo.classList.add("marcador-ativo");
 
-		let contaEnviarArqPubli = 1;
+			let texto = document.createElement("span");
+			texto.innerText = value;
+			texto.classList.add("texto");
 
-		while (configuracoesJSON['idUrlEnviarArquivoPublicacao' + contaEnviarArqPubli]) {
-			document.querySelector('#publicacao-' + contaEnviarArqPubli + ' > a.enviar-arquivo').setAttribute('href', urlEnviarArquivoPublicacao + configuracoesJSON['idUrlEnviarArquivoPublicacao' + contaEnviarArqPubli]);
+			novo_item.appendChild(marcador_ativo);
+			novo_item.appendChild(texto);
+			menuLateral.appendChild(novo_item);
 
-			contaEnviarArqPubli++;
+			let itemConteudo = document.querySelector('.item-conteudo[data-item="' + novo_item.getAttribute("data-item") + '"]');
+
+			if (itemConteudo.getAttribute("data-link") != null) {
+				novo_item.dataset.link = itemConteudo.getAttribute("data-link");
+			}
+
+			if (!item.bloquear) {
+				novo_item.addEventListener("click", function(event) {
+					if (novo_item.getAttribute("data-link") != null) {
+						window.open(novo_item.getAttribute("data-link"));
+						return false;
+					} else {
+						setItemMenuAtivo(novo_item);
+						menuLateral.dispatchEvent(fecharMenu);
+					}
+				});
+			}
+
+			if (conta_itens == 0) {
+				setItemMenuAtivo(novo_item);
+			}
+
+			if (conta_itens != itens_menu.length - 1) {
+				var item_menu_separador = document.createElement("div");
+
+				item_menu_separador.classList.add("item-menu-separador");
+
+				menuLateral.appendChild(item_menu_separador);
+			}
+
+			conta_itens++;
 		}
-	}).catch(error => {
-		console.log("ERRO: " + error);
 	});
 
+	document.querySelector('.item-conteudo[data-item="inicio"] .enviar-termo > a').setAttribute('href', urlTermoCompromisso + configuracoesJSON.idUrlTermoCompromisso);
+
+	document.querySelector('.item-conteudo[data-item="semana-3"] a.acessar-formulario').setAttribute('href', urlAcessarFormulario + configuracoesJSON.idUrlSemana3AcessarFormulario);
+
+	let contaEnviarArqPubli = 1;
+
+	while (configuracoesJSON['idUrlEnviarArquivoPublicacao' + contaEnviarArqPubli]) {
+		document.querySelector('#publicacao-' + contaEnviarArqPubli + ' > a.enviar-arquivo').setAttribute('href', urlEnviarArquivoPublicacao + configuracoesJSON['idUrlEnviarArquivoPublicacao' + contaEnviarArqPubli]);
+
+		contaEnviarArqPubli++;
+	}
+	
 	menuLateral.addEventListener('resetar', function(e) {
 		menuLateral.classList.remove("aberto", "fechado");
 		largura_coluna = "";

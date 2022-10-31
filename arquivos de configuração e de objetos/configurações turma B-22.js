@@ -1,4 +1,4 @@
-{
+var configuracoesJSON = {
 	"titulo": "Estágio Visita",
 	"ano": 2022,
 	"turma": "B-22",
@@ -47,4 +47,4 @@
 			}
 		]
 	}
-}
+};
