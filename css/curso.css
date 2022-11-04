@@ -629,6 +629,7 @@ a.acessar-formulario img {
   display: block;
 }
 #curso-container #coluna-conteudo .item-conteudo .curso-logo {
+  position: relative;
   width: 250px;
   height: 62px;
   background-image: url("../imagens/logo_estagio_visita_1.png");
@@ -643,6 +644,22 @@ a.acessar-formulario img {
     width: 382px;
     margin-bottom: 72px;
   }
+}
+#curso-container #coluna-conteudo .item-conteudo .curso-turma-texto {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #ABE367;
+  margin-bottom: 16px;
+  margin-left: 8px;
+}
+#curso-container #coluna-conteudo .item-conteudo .curso-turma-texto span {
+  font-weight: 700;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=semana-1] .curso-turma-texto, #curso-container #coluna-conteudo .item-conteudo[data-item=semana-2] .curso-turma-texto, #curso-container #coluna-conteudo .item-conteudo[data-item=semana-3] .curso-turma-texto {
+  margin-bottom: 24px;
+  margin-left: 0;
 }
 #curso-container #coluna-conteudo .item-conteudo .titulo {
   font-weight: 500;

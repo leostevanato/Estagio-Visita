@@ -780,6 +780,7 @@ a {
 			}
 
 			.curso-logo {
+				position: relative;
 				width: 250px;
 				height: 62px;
 
@@ -798,6 +799,29 @@ a {
 				@media only screen and (min-width: 992px) {
 					width: 382px;
 					margin-bottom: 72px;
+				}
+			}
+
+			.curso-turma-texto {
+				display: inline-block;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 100%;
+				color: #ABE367;
+				margin-bottom: 16px;
+				margin-left: 8px;
+
+				span {
+					font-weight: 700;
+				}
+			}
+
+			&[data-item="semana-1"],
+			&[data-item="semana-2"],
+			&[data-item="semana-3"] {
+				.curso-turma-texto {
+					margin-bottom: 24px;
+					margin-left: 0;
 				}
 			}
 

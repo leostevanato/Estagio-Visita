@@ -34,13 +34,11 @@ function criarObjeto(objeto) {
 	return novo_objeto;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-	objetosAprendizagemJSON.forEach(item => {
-		let elemento_objetos = document.querySelector('.item-conteudo[data-item="' + item.itemConteudo + '"] .objetos');
+objetosAprendizagemJSON.forEach(item => {
+	let elemento_objetos = document.querySelector('.item-conteudo[data-item="' + item.itemConteudo + '"] .objetos');
 
-		item.objetos.forEach(objeto => {
-			let novo_objeto = criarObjeto(objeto);
-			elemento_objetos.appendChild(novo_objeto);
-		});
+	item.objetos.forEach(objeto => {
+		let novo_objeto = criarObjeto(objeto);
+		elemento_objetos.appendChild(novo_objeto);
 	});
 });
