@@ -1,0 +1,51 @@
+@charset "UTF-8";
+#page-mod-page-view.pagina-confirma-presenca {
+  /* INÍCIO - Layout moodle */
+  /* FIM - Layout moodle */
+}
+#page-mod-page-view.pagina-confirma-presenca.path-mod-page {
+  /* Esconder elementos padrão do Moodle acima do menu */
+  /* Esconder Borda Padrão do Moodle da área do conteúdo */
+  /* Fundo área de navegação */
+}
+#page-mod-page-view.pagina-confirma-presenca.path-mod-page .pagelayout-course .headerbkg {
+  display: none;
+}
+#page-mod-page-view.pagina-confirma-presenca.path-mod-page .pagelayout-course div#learningcontent {
+  margin-top: 0 !important;
+}
+#page-mod-page-view.pagina-confirma-presenca.path-mod-page div#page-content,
+#page-mod-page-view.pagina-confirma-presenca.path-mod-page #region-main-box,
+#page-mod-page-view.pagina-confirma-presenca.path-mod-page #region-main {
+  padding: 0;
+}
+#page-mod-page-view.pagina-confirma-presenca.path-mod-page #region-main {
+  overflow-x: visible;
+}
+#page-mod-page-view.pagina-confirma-presenca.path-mod-page #region-main div[role=main] > h2 {
+  display: none;
+}
+#page-mod-page-view.pagina-confirma-presenca.path-mod-page #region-main div[role=main] > .modified {
+  display: none;
+}
+#page-mod-page-view.pagina-confirma-presenca.path-mod-page #page-header > div > div > div > div > div.mr-auto,
+#page-mod-page-view.pagina-confirma-presenca.path-mod-page #page-header > div > div > div > div.d-flex.flex-wrap,
+#page-mod-page-view.pagina-confirma-presenca.path-mod-page h3.sectionname,
+#page-mod-page-view.pagina-confirma-presenca.path-mod-page #completionprogressid {
+  display: none;
+}
+#page-mod-page-view.pagina-confirma-presenca.path-mod-page .course-content ul.topics li.section,
+#page-mod-page-view.pagina-confirma-presenca.path-mod-page .course-content ul.weeks li.section {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#page-mod-page-view.pagina-confirma-presenca.path-mod-page .course-content ul.topics li.section .content {
+  border: 0;
+}
+#page-mod-page-view.pagina-confirma-presenca.path-mod-page #section-0 > div.content > div.summary {
+  background-color: #ffffff;
+  padding: 0;
+}
+#page-mod-page-view.pagina-confirma-presenca.path-mod-page .editing .course-content ul.topics li.section .left, #page-mod-page-view.pagina-confirma-presenca.path-mod-page .editing .course-content ul.topics li.section .right {
+  padding: 0;
+}

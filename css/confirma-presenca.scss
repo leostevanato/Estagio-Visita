@@ -1,0 +1,66 @@
+#page-mod-page-view.pagina-confirma-presenca {
+	/* INÍCIO - Layout moodle */
+	&.path-mod-page {
+		.pagelayout-course .headerbkg {
+			display: none;
+		}
+
+		.pagelayout-course div#learningcontent {
+			margin-top: 0 !important;
+		}
+
+		div#page-content,
+		#region-main-box,
+		#region-main {
+			// @media only screen and (max-width: 1200px) {
+				padding: 0;
+			// }
+		}
+
+		#region-main {
+			overflow-x: visible;
+
+			div[role="main"] {
+				> h2 {
+					display: none;
+				}
+
+				> .modified {
+					display: none;
+				}
+			}
+		}
+
+		/* Esconder elementos padrão do Moodle acima do menu */
+		//#page-navbar > nav > ul, // Caminho de pão
+		#page-header > div > div > div > div >div.mr-auto,
+		#page-header > div > div > div > div.d-flex.flex-wrap,
+		h3.sectionname,
+		#completionprogressid {
+			display: none;
+		}
+
+		.course-content ul.topics li.section,
+		.course-content ul.weeks li.section {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+
+		/* Esconder Borda Padrão do Moodle da área do conteúdo */
+		.course-content ul.topics li.section .content {
+			border: 0;
+		}
+
+		/* Fundo área de navegação */
+		#section-0 > div.content > div.summary {
+			background-color: #ffffff;
+			padding: 0;
+			// max-width: 1440px;
+		}
+
+		.editing .course-content ul.topics li.section .left, .editing .course-content ul.topics li.section .right {
+			padding: 0;
+		}
+	}
+	/* FIM - Layout moodle */
+}
