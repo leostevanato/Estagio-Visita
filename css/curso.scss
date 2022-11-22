@@ -141,7 +141,7 @@ h3.sectionname,
 
 /* FIM - Layout moodle */
 
-.flex-basis-100 {
+.flex-basis-100 { // Pode ser usado para quebrar linhas em elementos flex
 	// Não tem no bootstrap, então criamos.
 	flex-basis: 100%;
 }
@@ -182,6 +182,11 @@ h3.sectionname,
 			margin-bottom: 32px;
 		}
 	}
+}
+
+.linha-separadora-verde {
+	width: 100%;
+	border: 1px solid #73BF32;
 }
 
 .caixa-info {
@@ -366,6 +371,7 @@ h3.sectionname,
 
 .box-atencao {
 	display: flex;
+	flex-wrap: wrap;
 	width: fit-content;
 	gap: 14px;
 	font-weight: 400;
@@ -382,7 +388,10 @@ h3.sectionname,
 		height: 32px;
 	}
 
-	
+	.texto {
+		flex: 1;
+	}
+
 	@media only screen and (min-width: 768px) {
 		font-size: 20px;
 		padding: 24px;
@@ -1143,9 +1152,12 @@ a {
 
 			&[data-item="certificado"] {
 				a {
+					&.acessar-avaliacao {
+						margin-bottom: 6px;
+					}
+
 					&.gerar-certificado {
-						display: none; // Aguardando link
-						// display: block;
+						display: block;
 					}
 
 					&.caixa-info {
@@ -1158,18 +1170,12 @@ a {
 				}
 
 				.info-certificado {
-					font-weight: 600;
-					font-size: 16px;
-					line-height: 162%;
-					text-align: center;
-					letter-spacing: -0.01em;
-					color: #73BF32;
 					flex-wrap: wrap;
-					max-width: 656px;
+					width: 100%;
 					justify-content: center;
-					margin-top: 56px;
+					gap: 60px 56px;
+					margin-top: 80px;
 					margin-bottom: 56px;
-					gap: 60px 40px;
 
 					@media only screen and (min-width: 992px) {
 						font-size: 23px;
@@ -1177,16 +1183,29 @@ a {
 					}
 
 					.info-box {
-						img {
-							margin-bottom: 24px;
-						}
+						display: flex;
+						flex-wrap: wrap;
+						gap: 8px 56px;
+						max-width: 532px;
+						margin: 0 auto;
 
-						&.esquerda {
-							width: 261px;
-						}
+						.area-texto {
+							flex: 1;
 
-						&.direita {
-							width: 307px;
+							.texto-titulo {
+								font-weight: 800;
+								font-size: 24px;
+								line-height: 100%;
+								color: #73BF32;
+								margin-bottom: 16px;
+							}
+
+							p {
+								font-weight: 600;
+								font-size: 20px;
+								line-height: 164%;
+								color: #063E70;
+							}
 						}
 					}
 				}

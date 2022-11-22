@@ -8,6 +8,10 @@ var configuracoesJSON = {
 	"idUrlEnviarArquivoPublicacao2": 99902,
 	"idUrlEnviarArquivoPublicacao3": 99903,
 	"idUrlSemana3AcessarFormulario": 99904,
+	"idUrlAvaliacao": 99905,
+	"idUrlCertificado40Horas": 99906,
+	"idUrlCertificado25Horas": 99907,
+	"idUrlCertificado15Horas": 99908,
 	"menu": {
 		"items": [
 			{

@@ -85,6 +85,11 @@ h3.sectionname,
   margin-bottom: 32px;
 }
 
+.linha-separadora-verde {
+  width: 100%;
+  border: 1px solid #73BF32;
+}
+
 .caixa-info {
   padding: 8px 24px 4px;
   gap: 8px;
@@ -255,6 +260,7 @@ h3.sectionname,
 
 .box-atencao {
   display: flex;
+  flex-wrap: wrap;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -271,6 +277,9 @@ h3.sectionname,
 .box-atencao img {
   width: 32px;
   height: 32px;
+}
+.box-atencao .texto {
+  flex: 1;
 }
 @media only screen and (min-width: 768px) {
   .box-atencao {
@@ -937,8 +946,11 @@ a.acessar-formulario img {
   color: #EEEEEE;
   text-decoration: none;
 }
+#curso-container #coluna-conteudo .item-conteudo[data-item=certificado] a.acessar-avaliacao {
+  margin-bottom: 6px;
+}
 #curso-container #coluna-conteudo .item-conteudo[data-item=certificado] a.gerar-certificado {
-  display: none;
+  display: block;
 }
 #curso-container #coluna-conteudo .item-conteudo[data-item=certificado] a.caixa-info {
   padding: 8px 24px 4px;
@@ -949,18 +961,12 @@ a.acessar-formulario img {
   }
 }
 #curso-container #coluna-conteudo .item-conteudo[data-item=certificado] .info-certificado {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 162%;
-  text-align: center;
-  letter-spacing: -0.01em;
-  color: #73BF32;
   flex-wrap: wrap;
-  max-width: 656px;
+  width: 100%;
   justify-content: center;
-  margin-top: 56px;
+  gap: 60px 56px;
+  margin-top: 80px;
   margin-bottom: 56px;
-  gap: 60px 40px;
 }
 @media only screen and (min-width: 992px) {
   #curso-container #coluna-conteudo .item-conteudo[data-item=certificado] .info-certificado {
@@ -968,14 +974,28 @@ a.acessar-formulario img {
     justify-content: space-between;
   }
 }
-#curso-container #coluna-conteudo .item-conteudo[data-item=certificado] .info-certificado .info-box img {
-  margin-bottom: 24px;
+#curso-container #coluna-conteudo .item-conteudo[data-item=certificado] .info-certificado .info-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 56px;
+  max-width: 532px;
+  margin: 0 auto;
 }
-#curso-container #coluna-conteudo .item-conteudo[data-item=certificado] .info-certificado .info-box.esquerda {
-  width: 261px;
+#curso-container #coluna-conteudo .item-conteudo[data-item=certificado] .info-certificado .info-box .area-texto {
+  flex: 1;
 }
-#curso-container #coluna-conteudo .item-conteudo[data-item=certificado] .info-certificado .info-box.direita {
-  width: 307px;
+#curso-container #coluna-conteudo .item-conteudo[data-item=certificado] .info-certificado .info-box .area-texto .texto-titulo {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 100%;
+  color: #73BF32;
+  margin-bottom: 16px;
+}
+#curso-container #coluna-conteudo .item-conteudo[data-item=certificado] .info-certificado .info-box .area-texto p {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 164%;
+  color: #063E70;
 }
 #curso-container #coluna-conteudo[data-item-ativo=inicio] {
   background-image: url("../imagens/bg_imagem_2.png");

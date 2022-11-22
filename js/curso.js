@@ -169,6 +169,14 @@ document.querySelector('.item-conteudo[data-item="inicio"] .enviar-termo > a').s
 
 document.querySelector('.item-conteudo[data-item="semana-3"] a.acessar-formulario').setAttribute('href', urlAcessarFormulario + configuracoesJSON.idUrlSemana3AcessarFormulario);
 
+document.querySelector('.item-conteudo[data-item="certificado"] a.acessar-avaliacao').setAttribute('href', urlAvaliacao + configuracoesJSON.idUrlAvaliacao);
+
+document.querySelector('.item-conteudo[data-item="certificado"] a#certificado-40-horas').setAttribute('href', urlPaginaCertificado + configuracoesJSON.idUrlCertificado40Horas);
+
+document.querySelector('.item-conteudo[data-item="certificado"] a#certificado-25-horas').setAttribute('href', urlPaginaCertificado + configuracoesJSON.idUrlCertificado25Horas);
+
+document.querySelector('.item-conteudo[data-item="certificado"] a#certificado-15-horas').setAttribute('href', urlPaginaCertificado + configuracoesJSON.idUrlCertificado15Horas);
+
 let contaEnviarArqPubli = 1;
 
 while (configuracoesJSON['idUrlEnviarArquivoPublicacao' + contaEnviarArqPubli]) {
