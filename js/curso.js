@@ -165,22 +165,33 @@ configuracoesJSON.menu.items.forEach(item => {
 	}
 });
 
-document.querySelector('.item-conteudo[data-item="inicio"] .enviar-termo > a').setAttribute('href', urlTermoCompromisso + configuracoesJSON.idUrlTermoCompromisso);
+document.querySelector('.responder-avaliacao')?.setAttribute('href', urlResponderAvaliacao + configuracoesJSON.idUrlResponderAvaliacao);
 
-document.querySelector('.item-conteudo[data-item="semana-3"] a.acessar-formulario').setAttribute('href', urlAcessarFormulario + configuracoesJSON.idUrlSemana3AcessarFormulario);
+let elemento_inicio = document.querySelector('.item-conteudo[data-item="inicio"]');
+let elemento_enviar_termo = elemento_inicio?.querySelector('.enviar-termo > a');
 
-document.querySelector('.item-conteudo[data-item="certificado"] a.acessar-avaliacao').setAttribute('href', urlAvaliacao + configuracoesJSON.idUrlAvaliacao);
+if (elemento_enviar_termo?.getAttribute('href') == "#") {
+	elemento_enviar_termo?.setAttribute('href', urlTermoCompromisso + configuracoesJSON.idUrlTermoCompromisso);
+}
 
-document.querySelector('.item-conteudo[data-item="certificado"] a#certificado-40-horas').setAttribute('href', urlPaginaCertificado + configuracoesJSON.idUrlCertificado40Horas);
+let elemento_semana_3 = document.querySelector('.item-conteudo[data-item="semana-3"]');
 
-document.querySelector('.item-conteudo[data-item="certificado"] a#certificado-25-horas').setAttribute('href', urlPaginaCertificado + configuracoesJSON.idUrlCertificado25Horas);
+elemento_semana_3?.querySelector('a.acessar-formulario')?.setAttribute('href', urlAcessarFormulario + configuracoesJSON.idUrlSemana3AcessarFormulario);
 
-document.querySelector('.item-conteudo[data-item="certificado"] a#certificado-15-horas').setAttribute('href', urlPaginaCertificado + configuracoesJSON.idUrlCertificado15Horas);
+let elemento_certificado = document.querySelector('.item-conteudo[data-item="certificado"]');
+
+elemento_certificado?.querySelector('a.acessar-avaliacao')?.setAttribute('href', urlAvaliacao + configuracoesJSON.idUrlAvaliacao);
+
+elemento_certificado?.querySelector('a#certificado-40-horas')?.setAttribute('href', urlPaginaCertificado + configuracoesJSON.idUrlCertificado40Horas);
+
+elemento_certificado?.querySelector('a#certificado-25-horas')?.setAttribute('href', urlPaginaCertificado + configuracoesJSON.idUrlCertificado25Horas);
+
+elemento_certificado?.querySelector('a#certificado-15-horas')?.setAttribute('href', urlPaginaCertificado + configuracoesJSON.idUrlCertificado15Horas);
 
 let contaEnviarArqPubli = 1;
 
 while (configuracoesJSON['idUrlEnviarArquivoPublicacao' + contaEnviarArqPubli]) {
-	document.querySelector('#publicacao-' + contaEnviarArqPubli + ' > a.enviar-arquivo').setAttribute('href', urlEnviarArquivoPublicacao + configuracoesJSON['idUrlEnviarArquivoPublicacao' + contaEnviarArqPubli]);
+	document.querySelector('#publicacao-' + contaEnviarArqPubli + ' > a.enviar-arquivo')?.setAttribute('href', urlEnviarArquivoPublicacao + configuracoesJSON['idUrlEnviarArquivoPublicacao' + contaEnviarArqPubli]);
 
 	contaEnviarArqPubli++;
 }
