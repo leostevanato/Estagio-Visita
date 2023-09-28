@@ -94,7 +94,6 @@ h3.sectionname,
   padding: 8px 24px 4px;
   gap: 8px;
   border-radius: 48px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   color: #FFFFFF;
@@ -230,7 +229,6 @@ h3.sectionname,
 }
 
 .imagem-semana {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -261,7 +259,6 @@ h3.sectionname,
 .box-atencao {
   display: flex;
   flex-wrap: wrap;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   gap: 14px;
@@ -549,7 +546,6 @@ a.acessar-formulario img {
 }
 #curso-container .botao-cta {
   display: none;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: 26px;
@@ -775,6 +771,7 @@ a.acessar-formulario img {
     font-size: 20px;
   }
 }
+#curso-container #coluna-conteudo .item-conteudo .gerar-declaracao-participacao,
 #curso-container #coluna-conteudo .item-conteudo .enviar-termo,
 #curso-container #coluna-conteudo .item-conteudo .fale-com {
   font-weight: 700;
@@ -782,20 +779,23 @@ a.acessar-formulario img {
   line-height: 100%;
   color: #063E70;
 }
+#curso-container #coluna-conteudo .item-conteudo .gerar-declaracao-participacao img,
 #curso-container #coluna-conteudo .item-conteudo .enviar-termo img,
 #curso-container #coluna-conteudo .item-conteudo .fale-com img {
   width: 32px;
   margin-right: 16px;
 }
 @media only screen and (min-width: 576px) {
+  #curso-container #coluna-conteudo .item-conteudo .gerar-declaracao-participacao img,
   #curso-container #coluna-conteudo .item-conteudo .enviar-termo img,
-#curso-container #coluna-conteudo .item-conteudo .fale-com img {
+  #curso-container #coluna-conteudo .item-conteudo .fale-com img {
     width: auto;
   }
 }
 @media only screen and (min-width: 576px) {
+  #curso-container #coluna-conteudo .item-conteudo .gerar-declaracao-participacao,
   #curso-container #coluna-conteudo .item-conteudo .enviar-termo,
-#curso-container #coluna-conteudo .item-conteudo .fale-com {
+  #curso-container #coluna-conteudo .item-conteudo .fale-com {
     font-size: 24px;
   }
 }
